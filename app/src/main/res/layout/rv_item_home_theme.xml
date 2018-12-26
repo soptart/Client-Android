@@ -19,22 +19,22 @@
             android:layout_height="18dp"
             android:layout_marginLeft="8dp">
         <TextView
-                android:id="@+id/txt_rv_item_theme_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:text="허전했던 벽에 한 번 걸어보자"
-                android:textColor="#b0b3ba"/>
+            android:id="@+id/txt_rv_item_theme_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="허전했던 벽에 한 번 걸어보자"
+            android:textColor="#b0b3ba"/>
         <TextView
-                android:id="@+id/txt_rv_item_theme_plus"
-                android:layout_marginRight="15.3dp"
-                android:layout_alignParentRight="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:clickable="true"
-                android:text="+ 더보기"
-                android:textColor="#43484b"/>
+            android:id="@+id/txt_rv_item_theme_plus"
+            android:layout_marginRight="15.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:clickable="true"
+            android:text="+ 더보기"
+            android:textColor="#43484b"/>
     </RelativeLayout>
     <LinearLayout
             android:layout_width="match_parent"
