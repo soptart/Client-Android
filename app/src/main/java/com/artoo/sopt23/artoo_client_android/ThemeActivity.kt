@@ -1,43 +1,27 @@
-package com.artoo.sopt23.artoo_client_android.Fragment
+package com.artoo.sopt23.artoo_client_android
 
-import android.content.Context
-import android.net.Uri
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.artoo.sopt23.artoo_client_android.Adapter.ProductRecyclerViewAdapter
+import com.artoo.sopt23.artoo_client_android.Adapter.ThemeRecyclerViewAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ProductOverviewData
-import com.artoo.sopt23.artoo_client_android.Data.ThemeData
-
-import com.artoo.sopt23.artoo_client_android.R
+import kotlinx.android.synthetic.main.activity_theme.*
 import kotlinx.android.synthetic.main.fragment_product.*
 
-class ProductFragment : Fragment() {
-    lateinit var productRecyclerViewAdapter: ProductRecyclerViewAdapter
-    var filter_size: String = "전체"
-    var filter_type: String? = null
-    var filter_category: String? = null
+class ThemeActivity : AppCompatActivity() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_product, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_theme)
         setRecyclerView()
-        setFilter()
-        super.onActivityCreated(savedInstanceState)
+
     }
 
-    fun setFilter(){
-        txt_fragment_filter.text = ""
-        if(filter_size != null) txt_fragment_filter.text = txt_fragment_filter.text.toString() + filter_size
-        if(filter_type!= null) txt_fragment_filter.text = txt_fragment_filter.text.toString() + " | " + filter_type
-        if(filter_category!= null) txt_fragment_filter.text = txt_fragment_filter.text.toString() + " | " + filter_category
-    }
+    lateinit var themeRecyclerViewAdapter: ThemeRecyclerViewAdapter
 
     fun setRecyclerView(){
         var dataList: ArrayList<ProductOverviewData> = ArrayList()
@@ -54,12 +38,8 @@ class ProductFragment : Fragment() {
         dataList.add(ProductOverviewData(4, "https://cdn.shopify.com/s/files/1/1202/6102/products/carhartt-horizontal-long-sleeve-t-shirt-dark-grey-heather-2.jpg?v=1537893366"))
         dataList.add(ProductOverviewData(5, "https://images.yaoota.com/Aho8kBbyPDfSY9vBM5q3-Z1352A=/trim/yaootaweb-production-ke/media/crawledproductimages/4b8e2ffd30a069e023b833644e4f8442d773e1de.jpg"))
 
-
-        val staggeredGridLayoutManager:StaggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        staggeredGridLayoutManager.gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
-        rv_fragment_product_list.layoutManager = staggeredGridLayoutManager
-
-        productRecyclerViewAdapter = ProductRecyclerViewAdapter(dataList)
-        rv_fragment_product_list.adapter = productRecyclerViewAdapter
+        themeRecyclerViewAdapter = ThemeRecyclerViewAdapter(dataList)
+        rv_theme_list.adapter = themeRecyclerViewAdapter
+        rv_theme_list.layoutManager = GridLayoutManager(this, 3)
     }
 }
