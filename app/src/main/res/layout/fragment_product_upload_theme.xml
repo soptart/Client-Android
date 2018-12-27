@@ -129,8 +129,8 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorEssential"
+            android:background="#ffffff"
             android:text="완료"
             android:textSize="24dp"
-            android:textColor="#ffffff"/>
+            android:textColor="@color/colorEssential"/>
 </LinearLayout>

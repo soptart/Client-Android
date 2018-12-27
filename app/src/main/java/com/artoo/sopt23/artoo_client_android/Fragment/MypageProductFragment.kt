@@ -9,5 +9,6 @@ import com.artoo.sopt23.artoo_client_android.R
 
 class MypageProductFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_mypage_product, container, false) }
+        return inflater.inflate(R.layout.fragment_mypage_product, container, false)
+    }
 }

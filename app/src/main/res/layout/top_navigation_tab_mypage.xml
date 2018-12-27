@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="56dp"
+              android:layout_height="56dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_marginLeft="8dp"
               android:orientation="horizontal">
     <RelativeLayout
             android:id="@+id/btn_top_navi_mypage_product_tab"
@@ -9,27 +10,48 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        <TextView
+        <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="작품"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:layout_centerInParent="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작품 "
+                    android:textSize="20dp"/>
+            <TextView
+                    android:id="@+id/tv_mypage_user_product_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorEssential"/>
+        </LinearLayout>
     </RelativeLayout>
+
     <RelativeLayout
             android:id="@+id/btn_top_navi_mypage_like_tab"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        <TextView
+        <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="저장"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:layout_centerInParent="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="저장 "
+                    android:textSize="20dp"/>
+            <TextView
+                    android:id="@+id/tv_mypage_user_like_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorEssential"/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
             android:id="@+id/btn_top_navi_mypage_deal_tab"
@@ -37,13 +59,23 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        <TextView
+        <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="거래"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:layout_centerInParent="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래 "
+                    android:textSize="20dp"/>
+            <TextView
+                    android:id="@+id/tv_mypage_user_deal_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorEssential"/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
             android:id="@+id/btn_top_navi_mypage_review_tab"
@@ -51,12 +83,22 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        <TextView
+        <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="후기"
-                android:textSize="16dp"
-                android:textStyle="bold"/>
+                android:layout_centerInParent="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="후기 "
+                    android:textSize="20dp"/>
+            <TextView
+                    android:id="@+id/tv_mypage_user_review_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorEssential"/>
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
