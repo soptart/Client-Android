@@ -27,9 +27,9 @@ class ProductFragment : Fragment() {
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         setRecyclerView()
         setFilter()
-        super.onActivityCreated(savedInstanceState)
     }
 
     fun setFilter(){
@@ -54,12 +54,12 @@ class ProductFragment : Fragment() {
         dataList.add(ProductOverviewData(4, "https://cdn.shopify.com/s/files/1/1202/6102/products/carhartt-horizontal-long-sleeve-t-shirt-dark-grey-heather-2.jpg?v=1537893366"))
         dataList.add(ProductOverviewData(5, "https://images.yaoota.com/Aho8kBbyPDfSY9vBM5q3-Z1352A=/trim/yaootaweb-production-ke/media/crawledproductimages/4b8e2ffd30a069e023b833644e4f8442d773e1de.jpg"))
 
-
-        val staggeredGridLayoutManager:StaggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        staggeredGridLayoutManager.gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
-        rv_fragment_product_list.layoutManager = staggeredGridLayoutManager
-
         productRecyclerViewAdapter = ProductRecyclerViewAdapter(dataList)
+        val staggeredGridLayoutManager:StaggeredGridLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        staggeredGridLayoutManager.gapStrategy=StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
+
         rv_fragment_product_list.adapter = productRecyclerViewAdapter
+        rv_fragment_product_list.layoutManager = staggeredGridLayoutManager
+        staggeredGridLayoutManager.invalidateSpanAssignments()
     }
 }
