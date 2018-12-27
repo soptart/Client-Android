@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ProductUploadActivity">
+        </activity>
         <activity android:name=".FilterActivity">
         </activity>
         <activity android:name=".ThemeActivity">
