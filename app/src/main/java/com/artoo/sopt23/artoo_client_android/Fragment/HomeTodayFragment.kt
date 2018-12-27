@@ -10,6 +10,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextClock
+import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Adapter.HomeTodayRecyclerViewAdapter
 import com.artoo.sopt23.artoo_client_android.Data.TodayData
 
@@ -28,8 +30,8 @@ class HomeTodayFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_home_today, container, false)
         setTodayView(view)
         setOnBtnClickListener(view)
-        return view
 
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -69,7 +71,7 @@ class HomeTodayFragment : Fragment() {
 
     }
 
-    private fun setOnBtnClickListener(view: View){
+    private fun setOnBtnClickListener(view:View){
 
         view.img_fragment_today_artist0.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "최윤정 작가"
