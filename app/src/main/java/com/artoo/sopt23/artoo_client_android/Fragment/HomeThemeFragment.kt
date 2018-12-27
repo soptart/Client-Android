@@ -32,6 +32,7 @@ class HomeThemeFragment : Fragment() {
         var dataList: ArrayList<ThemeData> = ArrayList()
 
         var img_url: ArrayList<String> = ArrayList()
+        img_url.add("http://webresizer.com/images2/bird1_after.jpg")
         img_url.add("http://img.newspim.com/news/2018/03/31/1803311718414850.jpg")
         img_url.add("http://www.newsa.co.kr/news/photo/201809/187929_146645_3554.jpg")
         img_url.add("https://www.nemopan.com/files/attach/images/2582/269/848/493724be0c020.jpg")
