@@ -1,6 +1,7 @@
 package com.artoo.sopt23.artoo_client_android.Adapter
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +10,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Data.ThemeData
 import com.artoo.sopt23.artoo_client_android.R
+import com.artoo.sopt23.artoo_client_android.ThemeActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import org.jetbrains.anko.startActivity
 
 class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): RecyclerView.Adapter<HomeThemeRecyclerViewAdapter.Holder>(){
     lateinit var ctx: Context
@@ -46,6 +49,10 @@ class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): Recycler
             .load(dataList[position].img_url[3])
             .apply(options)
             .into(holder.img3);
+        holder.plus.setOnClickListener {
+            val intent: Intent = Intent(ctx, ThemeActivity::class.java)
+            ctx.startActivity(intent)
+        }
     }
 
     inner class Holder(itemView: View): RecyclerView.ViewHolder(itemView){

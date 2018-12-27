@@ -6,8 +6,8 @@
                                     app:cardCornerRadius="5dp"
                                     app:cardUseCompatPadding="true"
                                     android:background="@color/colorMainBlack">
-    <ImageView
-            android:id="@+id/img_rv_item_product_product"
+    <com.artoo.sopt23.artoo_client_android.CustomView.SquareImageView
+            android:id="@+id/img_product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
