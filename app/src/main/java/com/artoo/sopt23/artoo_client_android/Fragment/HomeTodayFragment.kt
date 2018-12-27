@@ -1,5 +1,7 @@
 package com.artoo.sopt23.artoo_client_android.Fragment
 
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -21,7 +23,7 @@ import kotlinx.android.synthetic.main.fragment_home_today.view.*
 
 class HomeTodayFragment : Fragment() {
     lateinit var homeTodayRecyclerViewAdapter:HomeTodayRecyclerViewAdapter
-    var options: RequestOptions = RequestOptions().transforms(CenterCrop(), RoundedCorners(50))
+    var options: RequestOptions = RequestOptions().transforms(CenterCrop(), RoundedCorners(20))
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_home_today, container, false)
         setTodayView(view)
@@ -46,47 +48,183 @@ class HomeTodayFragment : Fragment() {
         view.txt_fragment_today_artist4.text = "김정음"
         Glide.with(view)
                 .load("http://mblogthumb2.phinf.naver.net/MjAxNzA4MTFfODEg/MDAxNTAyNDU5MzM1MjIy.QOa0CMsbB3QKqMHBPgkK-UVHl2P8SXIeqxcz8p_ogSgg.FnoWE1eD8-nROYTatVwgMbXJw52b-B_saXFObmo3KO8g.JPEG.piiin/piiin_%ED%97%A8%ED%82%B4_%EA%B5%AC%EC%8A%AC%EB%AA%A8%EC%95%84%EB%8B%B9%EA%B5%AC%EC%9E%A5_%2872%29.jpg?type=w800")
-                .apply(options)
+                .apply(options.override(130,130))
                 .into(view.img_fragment_today_artist0)
         Glide.with(view)
                 .load("https://t1.daumcdn.net/cfile/tistory/2376BA3B52AB79E703")
-                .apply(options)
+                .apply(options.override(130,130))
                 .into(view.img_fragment_today_artist1)
         Glide.with(view)
                 .load("http://blogimg.ohmynews.com/attach/1475/1386229890.jpg")
-                .apply(options)
+                .apply(options.override(130,130))
                 .into(view.img_fragment_today_artist2)
         Glide.with(view)
                 .load("http://www.geojenews.com/news/photo/201707/43970_30774_1656.jpg")
-                .apply(options)
+                .apply(options.override(130,130))
                 .into(view.img_fragment_today_artist3)
         Glide.with(view)
                 .load("http://img.vogue.co.kr/vogue/2015/04/style_579bbf94e23cc.jpg")
-                .apply(options)
+                .apply(options.override(130,130))
                 .into(view.img_fragment_today_artist4)
 
     }
 
     private fun setOnBtnClickListener(view: View){
+
         view.img_fragment_today_artist0.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "최윤정 작가"
             setRecyclerView(0)
+            view.txt_fragment_today_artist0.setTypeface(null,Typeface.BOLD)
+            view.txt_fragment_today_artist0.setTextColor(Color.parseColor("#3b3b3b"))
+            view.txt_fragment_today_artist1.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist1.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist2.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist2.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist3.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist3.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist4.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist4.setTextColor(Color.parseColor("#777777"))
+
+            view.img_fragment_today_artist0.setScaleX(1.2f)
+            view.img_fragment_today_artist0.setScaleY(1.2f)
+            view.img_fragment_today_artist1.setScaleX(1.0f)
+            view.img_fragment_today_artist1.setScaleY(1.0f)
+            view.img_fragment_today_artist2.setScaleX(1.0f)
+            view.img_fragment_today_artist2.setScaleY(1.0f)
+            view.img_fragment_today_artist3.setScaleX(1.0f)
+            view.img_fragment_today_artist3.setScaleY(1.0f)
+            view.img_fragment_today_artist4.setScaleX(1.0f)
+            view.img_fragment_today_artist4.setScaleY(1.0f)
+
+            view.img_fragment_today_artist0.setColorFilter(Color.parseColor("#A5ffffff"))
+            view.img_fragment_today_artist1.setColorFilter(null)
+            view.img_fragment_today_artist2.setColorFilter(null)
+            view.img_fragment_today_artist3.setColorFilter(null)
+            view.img_fragment_today_artist4.setColorFilter(null)
         }
         view.img_fragment_today_artist1.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "이세은 작가"
             setRecyclerView(1)
+            view.txt_fragment_today_artist0.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist0.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist1.setTypeface(null,Typeface.BOLD)
+            view.txt_fragment_today_artist1.setTextColor(Color.parseColor("#3b3b3b"))
+            view.txt_fragment_today_artist2.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist2.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist3.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist3.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist4.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist4.setTextColor(Color.parseColor("#777777"))
+
+            view.img_fragment_today_artist0.setScaleX(1.0f)
+            view.img_fragment_today_artist0.setScaleY(1.0f)
+            view.img_fragment_today_artist1.setScaleX(1.2f)
+            view.img_fragment_today_artist1.setScaleY(1.2f)
+            view.img_fragment_today_artist2.setScaleX(1.0f)
+            view.img_fragment_today_artist2.setScaleY(1.0f)
+            view.img_fragment_today_artist3.setScaleX(1.0f)
+            view.img_fragment_today_artist3.setScaleY(1.0f)
+            view.img_fragment_today_artist4.setScaleX(1.0f)
+            view.img_fragment_today_artist4.setScaleY(1.0f)
+
+            view.img_fragment_today_artist0.setColorFilter(null)
+            view.img_fragment_today_artist1.setColorFilter(Color.parseColor("#A5ffffff"))
+            view.img_fragment_today_artist2.setColorFilter(null)
+            view.img_fragment_today_artist3.setColorFilter(null)
+            view.img_fragment_today_artist4.setColorFilter(null)
         }
         view.img_fragment_today_artist2.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "윤여진 작가"
             setRecyclerView(2)
+            view.txt_fragment_today_artist0.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist0.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist1.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist1.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist2.setTypeface(null,Typeface.BOLD)
+            view.txt_fragment_today_artist2.setTextColor(Color.parseColor("#3b3b3b"))
+            view.txt_fragment_today_artist3.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist3.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist4.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist4.setTextColor(Color.parseColor("#777777"))
+
+            view.img_fragment_today_artist0.setScaleX(1.0f)
+            view.img_fragment_today_artist0.setScaleY(1.0f)
+            view.img_fragment_today_artist1.setScaleX(1.0f)
+            view.img_fragment_today_artist1.setScaleY(1.0f)
+            view.img_fragment_today_artist2.setScaleX(1.2f)
+            view.img_fragment_today_artist2.setScaleY(1.2f)
+            view.img_fragment_today_artist3.setScaleX(1.0f)
+            view.img_fragment_today_artist3.setScaleY(1.0f)
+            view.img_fragment_today_artist4.setScaleX(1.0f)
+            view.img_fragment_today_artist4.setScaleY(1.0f)
+
+            view.img_fragment_today_artist0.setColorFilter(null)
+            view.img_fragment_today_artist1.setColorFilter(null)
+            view.img_fragment_today_artist2.setColorFilter(Color.parseColor("#A5ffffff"))
+            view.img_fragment_today_artist3.setColorFilter(null)
+            view.img_fragment_today_artist4.setColorFilter(null)
         }
         view.img_fragment_today_artist3.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "한선민 작가"
             setRecyclerView(3)
+            view.txt_fragment_today_artist0.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist0.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist1.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist1.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist2.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist2.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist3.setTypeface(null,Typeface.BOLD)
+            view.txt_fragment_today_artist3.setTextColor(Color.parseColor("#3b3b3b"))
+            view.txt_fragment_today_artist4.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist4.setTextColor(Color.parseColor("#777777"))
+
+            view.img_fragment_today_artist0.setScaleX(1.0f)
+            view.img_fragment_today_artist0.setScaleY(1.0f)
+            view.img_fragment_today_artist1.setScaleX(1.0f)
+            view.img_fragment_today_artist1.setScaleY(1.0f)
+            view.img_fragment_today_artist2.setScaleX(1.0f)
+            view.img_fragment_today_artist2.setScaleY(1.0f)
+            view.img_fragment_today_artist3.setScaleX(1.2f)
+            view.img_fragment_today_artist3.setScaleY(1.2f)
+            view.img_fragment_today_artist4.setScaleX(1.0f)
+            view.img_fragment_today_artist4.setScaleY(1.0f)
+
+            view.img_fragment_today_artist0.setColorFilter(null)
+            view.img_fragment_today_artist1.setColorFilter(null)
+            view.img_fragment_today_artist2.setColorFilter(null)
+            view.img_fragment_today_artist3.setColorFilter(Color.parseColor("#A5ffffff"))
+            view.img_fragment_today_artist4.setColorFilter(null)
         }
         view.img_fragment_today_artist4.setOnClickListener {
             view.txt_fragment_today_detail_artist.text = "김정음 작가"
             setRecyclerView(4)
+            view.txt_fragment_today_artist0.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist0.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist1.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist1.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist2.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist2.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist3.setTypeface(null,Typeface.NORMAL)
+            view.txt_fragment_today_artist3.setTextColor(Color.parseColor("#777777"))
+            view.txt_fragment_today_artist4.setTypeface(null,Typeface.BOLD)
+            view.txt_fragment_today_artist4.setTextColor(Color.parseColor("#3b3b3b"))
+
+            view.img_fragment_today_artist0.setScaleX(1.0f)
+            view.img_fragment_today_artist0.setScaleY(1.0f)
+            view.img_fragment_today_artist1.setScaleX(1.0f)
+            view.img_fragment_today_artist1.setScaleY(1.0f)
+            view.img_fragment_today_artist2.setScaleX(1.0f)
+            view.img_fragment_today_artist2.setScaleY(1.0f)
+            view.img_fragment_today_artist3.setScaleX(1.0f)
+            view.img_fragment_today_artist3.setScaleY(1.0f)
+            view.img_fragment_today_artist4.setScaleX(1.2f)
+            view.img_fragment_today_artist4.setScaleY(1.2f)
+
+            view.img_fragment_today_artist0.setColorFilter(null)
+            view.img_fragment_today_artist1.setColorFilter(null)
+            view.img_fragment_today_artist2.setColorFilter(null)
+            view.img_fragment_today_artist3.setColorFilter(null)
+            view.img_fragment_today_artist4.setColorFilter(Color.parseColor("#A5ffffff"))
         }
     }
 
@@ -138,11 +276,8 @@ class HomeTodayFragment : Fragment() {
             dataList.add(TodayData("라","2017 作","https://notefolio.net/data/img/f6/8e/f68e699d1d7c557c33272f81dd764ce5a3649b4ea54a6012bb2c6a98ad9176e8_v1.jpg"))
             dataList.add(TodayData("마","2018 作","https://pbs.twimg.com/media/Dt-r9VrV4AM7Ort.jpg"))
         }
-
-
         homeTodayRecyclerViewAdapter = HomeTodayRecyclerViewAdapter(activity!!, dataList)
         rv_fragment_home_today_list.adapter = homeTodayRecyclerViewAdapter
         rv_fragment_home_today_list.layoutManager = LinearLayoutManager(activity, LinearLayout.HORIZONTAL,false)
     }
-
 }
