@@ -33,8 +33,7 @@ class HomeFragment : Fragment() {
         view.tl_top_navi_act_top_menu.setupWithViewPager(view.vp_top_navi_act_frag_pager)
 //TabLayout에 붙일 layout을 찾아준 다음
         val topNaviLayout : View = inflater.inflate(R.layout.top_navigation_tab_home, null, false)
-//        val topNaviLayout : View = getActivity()!!.getLayoutInflater().inflate(R.layout.top_navigation_tab_home, null, false)
-//탭 하나하나 TabLayout에 연결시켜줍니다.
+
         view.tl_top_navi_act_top_menu.getTabAt(0)!!.customView = topNaviLayout.findViewById(R.id.btn_top_navi_home_today_tab) as RelativeLayout
         view.tl_top_navi_act_top_menu.getTabAt(1)!!.customView = topNaviLayout.findViewById(R.id.btn_top_navi_home_theme_tab) as RelativeLayout
     }
