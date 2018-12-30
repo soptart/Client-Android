@@ -13,7 +13,6 @@ import com.artoo.sopt23.artoo_client_android.R
 import com.artoo.sopt23.artoo_client_android.ThemeActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import org.jetbrains.anko.startActivity
 
 class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): RecyclerView.Adapter<HomeThemeRecyclerViewAdapter.Holder>(){
     lateinit var ctx: Context

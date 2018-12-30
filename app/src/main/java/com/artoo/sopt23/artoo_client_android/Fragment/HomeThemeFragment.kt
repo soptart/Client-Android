@@ -24,11 +24,11 @@ class HomeThemeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        setRecyclerView()
+        //setRecyclerView()
     }
 
 
-    private fun setRecyclerView() {
+    /*private fun setRecyclerView() {
         var dataList: ArrayList<ThemeData> = ArrayList()
 
         var img_url: ArrayList<String> = ArrayList()
@@ -43,5 +43,5 @@ class HomeThemeFragment : Fragment() {
         homeThemeRecyclerViewAdapter = HomeThemeRecyclerViewAdapter(dataList)
         rv_fragment_theme_list.adapter = homeThemeRecyclerViewAdapter
         rv_fragment_theme_list.layoutManager = LinearLayoutManager(activity)
-    }
+    }*/
 }
