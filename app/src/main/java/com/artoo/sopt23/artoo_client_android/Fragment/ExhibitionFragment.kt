@@ -1,5 +1,6 @@
 package com.artoo.sopt23.artoo_client_android.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -7,20 +8,36 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Adapter.MainExhibitionAdapter
+import com.artoo.sopt23.artoo_client_android.ApplyExhibitionActivity
 import com.artoo.sopt23.artoo_client_android.Data.MainExhibitionData
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_exhibition.*
 
 class ExhibitionFragment : Fragment() {
+
     lateinit var mainExhibitionAdapter: MainExhibitionAdapter
+    lateinit var btn_apply_ex : TextView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_exhibition, container, false) }
+        val view = inflater.inflate(R.layout.fragment_exhibition, container, false)
+
+        init(view)
+
+        btn_apply_ex.setOnClickListener { v: View? ->
+            var intent = Intent(activity!!.applicationContext, ApplyExhibitionActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
+    }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+
         RecyclerView()
     }
 
@@ -47,6 +64,10 @@ class ExhibitionFragment : Fragment() {
 //        linearLayoutManager.isAutoMeasureEnabled = true
 //        rv_main_ex.layoutManager = linearLayoutManager
 //        rv_main_ex.isNestedScrollingEnabled = false
+    }
+
+    fun init(view: View) {
+        btn_apply_ex = view.findViewById(R.id.btn_apply_ex)
     }
 }
 
