@@ -1,18 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".Fragment.ExhibitionFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-                android:text="I'm Exhibition Fragment"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-    </RelativeLayout>
-</FrameLayout>
+            <!-- 배너부분 나중에 수정. 프레임레이아웃 백그라운드 지우고 이미지뷰 백그라운드로-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:background="#000000">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|left">
+
+                    <!-- 텍스트 아이디 지정-->
+                    <TextView
+                        android:id="@+id/txt_exhibition_banner_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="12.7dp"
+                        android:letterSpacing="-0.02"
+                        android:lineSpacingExtra="5.3sp"
+                        android:text="11월의 단체전시 신청시작!\n[익숙함이 새로웠던 전] - 일상편 "
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5.3dp"
+                        android:letterSpacing="-0.02"
+                        android:lineSpacingExtra="6.7sp"
+                        android:text="2018.11~2018.12"
+                        android:textColor="#e3e3e3"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_ex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
