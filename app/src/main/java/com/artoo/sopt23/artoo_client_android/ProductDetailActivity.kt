@@ -73,6 +73,5 @@ class ProductDetailActivity : AppCompatActivity() {
         productDetailCommentRecyclerViewAdapter = ProductDetailCommentRecyclerViewAdapter(this, dataList)
         rv_product_detail_comment_list.adapter = productDetailCommentRecyclerViewAdapter
         rv_product_detail_comment_list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-
     }
 }
