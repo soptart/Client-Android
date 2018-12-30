@@ -70,5 +70,4 @@ class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList
         val title: TextView = itemView.findViewById(R.id.txt_rv_item_home_today_title) as TextView
         val img: ImageView = itemView.findViewById(R.id.img_rv_item_home_today_product) as ImageView
     }
-
 }
