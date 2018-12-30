@@ -12,6 +12,7 @@
             android:supportsRtl="true">
         <activity android:name=".MainActivity"
                   android:windowSoftInputMode="adjustNothing"
+                  android:windowSoftInputMode="adjustNothing">
                   android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +25,7 @@
         <activity android:name=".JoinActivity2"/>
         <activity android:name=".JoinActivity3"/>
         <activity android:name=".JoinActivity4"/>
+        <activity android:name=".JoinActivity4">
         <activity android:name=".ProductDetailActivity"
                   android:theme="@style/NoActionBar">
         </activity>
