@@ -29,27 +29,28 @@ class MypageDealRecyclerViewAdapter(val dataList: ArrayList<MypageDealData>): Re
         var options: RequestOptions = RequestOptions().transforms(CenterCrop(), RoundedCorners(50))
 
         Glide.with(ctx)
-            .load(dataList[position].img_url)
+            .load(dataList[position].product_img)
             .apply(options)
-            .into(holder.img)
+            .into(holder.product_img)
 
-        holder.title.text = dataList[position].title
-        holder.buyer.text = dataList[position].buyer
-        holder.price.text = dataList[position].price
-        holder.date.text = dataList[position].date
+        holder.product_title.text = dataList[position].product_title
+        holder.product_buyer.text = dataList[position].product_buyer
+        holder.product_price.text = dataList[position].product_price
+        holder.writetime.text = dataList[position].writetime
 
         Glide.with(ctx)
             .load(dataList[position].status_img)
             .apply(options)
-            .into(holder.status)
+            .into(holder.status_img)
     }
 
     inner class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
-        val img: ImageView = itemView.findViewById(R.id.img_rv_item_mypage_deal_product) as ImageView
-        val title: TextView = itemView.findViewById(R.id.txt_rv_item_mypage_deal_title) as TextView
-        val buyer: TextView = itemView.findViewById(R.id.txt_rv_item_mypage_deal_buyer) as TextView
-        val price: TextView = itemView.findViewById(R.id.txt_rv_item_mypage_deal_price) as TextView
-        val date: TextView = itemView.findViewById(R.id.txt_rv_item_mypage_deal_date) as TextView
-        val status: ImageView = itemView.findViewById(R.id.img_rv_item_mypage_deal_status) as ImageView
+
+        val product_img: ImageView = itemView.findViewById(R.id.iv_mypage_deal_product_image)
+        val product_title: TextView = itemView.findViewById(R.id.tv_mypage_deal_product_title)
+        val product_buyer: TextView = itemView.findViewById(R.id.tv_mypage_deal_product_buyer)
+        val product_price: TextView = itemView.findViewById(R.id.tv_mypage_deal_product_price)
+        val writetime: TextView = itemView.findViewById(R.id.tv_mypage_deal_writetime)
+        val status_img: ImageView = itemView.findViewById(R.id.iv_mypage_deal_status)
     }
 }

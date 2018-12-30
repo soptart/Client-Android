@@ -44,7 +44,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="작품 업로드"
-                            android:textSize="24dp"
+                            android:textSize="22sp"
                             android:textStyle="bold"/>
                 </RelativeLayout>
                 <LinearLayout
@@ -74,7 +74,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="0.8"
                                 android:text="작품명"
-                                android:textSize="20dp"
+                                android:textSize="15sp"
                                 android:textStyle="bold"/>
                         <EditText
                                 android:id="@+id/et_product_upload_title"
@@ -82,7 +82,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1.2"
                                 android:hint="띄어쓰기 포함 15자 이내"
-                                android:textSize="12dp"/>
+                                android:textSize="13sp"/>
                         <Spinner
                                 android:id="@+id/spn_product_upload_category"
                                 android:layout_width="match_parent"
@@ -113,14 +113,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="작품 설명"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"/>
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@+id/tv_content"
                             android:text=" *"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorEssential"/>
                 </RelativeLayout>
@@ -136,7 +136,38 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/border"
                             android:hint="띄어쓰기 포함 200자 이내 / \n\n작품 키워드 검색 시 \n작품명, 작품 설명 속 키워드를 통해\n결과가 보여집니다"
-                            android:layout_alignParentStart="true" android:layout_alignParentTop="true"/>
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:textSize="14sp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="제작 년도"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+                    <EditText
+                            android:id="@+id/et_product_upload_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="년"
+                            android:textSize="12sp"
+                            android:textAlignment="textEnd"/>
                 </RelativeLayout>
                 <RelativeLayout
                         android:layout_width="match_parent"
@@ -149,8 +180,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="테마 해시태그"
-                            android:textSize="20dp"
-                            android:textStyle="bold"/>
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
                 </RelativeLayout>
                 <RelativeLayout
                         android:layout_width="match_parent"
@@ -160,11 +191,71 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp">
 
-                    <ImageButton
-                            android:id="@+id/btn_product_upload_add_theme"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            tools:src="@android:drawable/editbox_dropdown_dark_frame"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+                        <LinearLayout
+                                android:id="@+id/rl_product_upload_tag1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorEssential"
+                                android:visibility="gone">
+                            <TextView
+                                    android:id="@+id/tv_product_upload_tag1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="심플한" />
+                            <Button
+                                    android:id="@+id/btn_product_upload_delete_tag1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorBorder"
+                                    android:text="X"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:id="@+id/rl_product_upload_tag2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorEssential"
+                                android:visibility="gone">
+                            <TextView
+                                    android:id="@+id/tv_product_upload_tag2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="심플한" />
+                            <Button
+                                    android:id="@+id/btn_product_upload_delete_tag2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorBorder"
+                                    android:text="X"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:id="@+id/rl_product_upload_tag3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorEssential"
+                                android:visibility="gone"
+                                android:text="hashtag3">
+                            <TextView
+                                    android:id="@+id/tv_product_upload_tag3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="심플한"/>
+                            <Button
+                                    android:id="@+id/btn_product_upload_delete_tag3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorBorder"
+                                    android:text="X"/>
+                        </LinearLayout>
+                        <Button
+                                android:id="@+id/btn_product_upload_add_theme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:text="추가하기">
+                        </Button>
+                    </LinearLayout>
                 </RelativeLayout>
                 <RelativeLayout
                         android:layout_width="match_parent"
@@ -178,14 +269,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="작품 SIZE"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"/>
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@+id/tv_product_size"
                             android:text=" *"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorEssential"/>
                 </RelativeLayout>
@@ -203,6 +294,7 @@
                             android:layout_weight="3"
                             android:background="@drawable/border"
                             android:hint="가로.cm"
+                            android:textSize="15sp"
                             android:textAlignment="center"/>
                     <RelativeLayout
                             android:layout_width="0dp"
@@ -214,7 +306,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
                                 android:text="X"
-                                android:textSize="24dp"
+                                android:textSize="13sp"
                                 android:textColor="@color/colorBorder"/>
                     </RelativeLayout>
                     <EditText
@@ -224,6 +316,7 @@
                             android:layout_weight="3"
                             android:background="@drawable/border"
                             android:hint="세로.cm"
+                            android:textSize="15sp"
                             android:textAlignment="center"/>
                     <RelativeLayout
                             android:layout_width="0dp"
@@ -235,7 +328,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
                                 android:text="X"
-                                android:textSize="24dp"
+                                android:textSize="13sp"
                                 android:textColor="@color/colorBorder"/>
                     </RelativeLayout>
                     <EditText
@@ -245,6 +338,7 @@
                             android:layout_weight="3"
                             android:background="@drawable/border"
                             android:hint="높이.cm"
+                            android:textSize="15sp"
                             android:textAlignment="center"/>
                 </LinearLayout>
                 <LinearLayout
@@ -263,14 +357,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="작품 가격"
-                                android:textSize="20dp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"/>
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_toEndOf="@+id/tv_product_price"
                                 android:text=" *"
-                                android:textSize="20dp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/colorEssential"/>
                     </RelativeLayout>
@@ -280,6 +374,7 @@
                             android:layout_height="match_parent"
                             android:background="@drawable/border"
                             android:text="원"
+                            android:textSize="12sp"
                             android:textAlignment="textEnd"/>
                 </LinearLayout>
                 <RelativeLayout
@@ -320,14 +415,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="배송 여부"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"/>
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@+id/tv_product_delivery"
                             android:text=" *"
-                            android:textSize="20dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorEssential"/>
                 </RelativeLayout>
@@ -345,7 +440,7 @@
                             android:layout_marginRight="4dp"
                             android:background="@drawable/border"
                             android:text="택배"
-                            android:textSize="18dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorBorder"/>
                     <Button
@@ -356,7 +451,7 @@
                             android:layout_marginLeft="4dp"
                             android:background="@drawable/border"
                             android:text="직거래"
-                            android:textSize="18dp"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorBorder"/>
                 </LinearLayout>
@@ -379,6 +474,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="추가정보"
+                            android:textSize="12sp"
                             android:textAlignment="center"/>
                     <View
                             android:layout_width="0dp"
@@ -396,11 +492,20 @@
                         android:layout_marginRight="8dp">
 
                     <TextView
+                            android:id="@+id/tv_material"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="표현 기법"
-                            android:textSize="20dp"
+                            android:text="작품 재료"
+                            android:textSize="16sp"
                             android:textStyle="bold"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv_material"
+                            android:text=" *"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorEssential"/>
                 </RelativeLayout>
                 <RelativeLayout
                         android:layout_width="match_parent"
@@ -427,8 +532,8 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="작품 재료"
-                            android:textSize="20dp"
+                            android:text="표현 기법"
+                            android:textSize="16sp"
                             android:textStyle="bold"/>
                 </RelativeLayout>
                 <RelativeLayout

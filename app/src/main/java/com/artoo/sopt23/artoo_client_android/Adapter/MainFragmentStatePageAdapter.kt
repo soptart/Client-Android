@@ -8,6 +8,7 @@ import com.artoo.sopt23.artoo_client_android.Fragment.HomeFragment
 import com.artoo.sopt23.artoo_client_android.Fragment.MypageFragment
 import com.artoo.sopt23.artoo_client_android.Fragment.ProductFragment
 
+//Main Tab Adpater
 class MainFragmentStatePagerAdapter(fm : FragmentManager, val fragmentCount : Int): FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment? {
         when (position) {
