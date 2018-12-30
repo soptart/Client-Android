@@ -25,7 +25,7 @@ class HomeArtist3Fragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
+        setRecyclerView()
         val snapHelper: LinearSnapHelper = LinearSnapHelper()
         snapHelper.attachToRecyclerView(rv_fragment_home_today_artist3_list)
     }

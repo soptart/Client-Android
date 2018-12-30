@@ -38,7 +38,7 @@ class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList
         }
     }
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if(holder.itemViewType == 0)
+        if(position == 0)
         {
             (holder as HolderMain).university.text = dataListMain[position].university
             (holder).name.text = dataListMain[position].name
@@ -48,13 +48,11 @@ class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList
                 .into((holder).backimg)
         }
         else {
-            (holder as HolderArtist).title.text = dataListArtist[position].title
+            (holder as HolderArtist).title.text = dataListArtist[position-1].title
 
-            var options: RequestOptions = RequestOptions().transforms(RoundedCorners(50))
 
             Glide.with(ctx)
-                .load(dataListArtist[position].img_url)
-                .apply(options)
+                .load(dataListArtist[position-1].img_url)
                 .into((holder).img)
         }
     }
