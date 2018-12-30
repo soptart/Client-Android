@@ -11,6 +11,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true">
         <activity android:name=".MainActivity"
+                  android:windowSoftInputMode="adjustNothing">
                   android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -18,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".JoinActivity1"/>
+        <activity android:name=".JoinActivity2"/>
+        <activity android:name=".JoinActivity3"/>
+        <activity android:name=".JoinActivity4">
         <activity android:name=".ProductDetailActivity"
                   android:theme="@style/NoActionBar">
         </activity>
