@@ -11,10 +11,10 @@ import com.artoo.sopt23.artoo_client_android.Data.ThemeData
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_home_theme.*
+import kotlinx.android.synthetic.main.rv_item_home_theme.*
 import kotlin.collections.ArrayList
 
 class HomeThemeFragment : Fragment() {
-
     lateinit var homeThemeRecyclerViewAdapter: HomeThemeRecyclerViewAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -23,10 +23,12 @@ class HomeThemeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
         setRecyclerView()
     }
 
-    private fun setRecyclerView(){
+
+    private fun setRecyclerView() {
         var dataList: ArrayList<ThemeData> = ArrayList()
 
         var img_url: ArrayList<String> = ArrayList()

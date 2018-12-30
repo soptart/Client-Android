@@ -17,7 +17,6 @@ import org.jetbrains.anko.startActivity
 
 class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): RecyclerView.Adapter<HomeThemeRecyclerViewAdapter.Holder>(){
     lateinit var ctx: Context
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         ctx = parent.context
         val view: View = LayoutInflater.from(ctx).inflate(R.layout.rv_item_home_theme, parent, false)
@@ -33,22 +32,22 @@ class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): Recycler
         var options: RequestOptions = RequestOptions().centerCrop()
 
         Glide.with(ctx)
-            .load(dataList[position].img_url[0])
-            .apply(options)
-            .into(holder.img0);
+                .load(dataList[position].img_url[0])
+                .apply(options)
+                .into(holder.img0)
 
         Glide.with(ctx)
-            .load(dataList[position].img_url[1])
-            .apply(options)
-            .into(holder.img1);
+                .load(dataList[position].img_url[1])
+                .apply(options)
+                .into(holder.img1)
         Glide.with(ctx)
-            .load(dataList[position].img_url[2])
-            .apply(options)
-            .into(holder.img2);
+                .load(dataList[position].img_url[2])
+                .apply(options)
+                .into(holder.img2)
         Glide.with(ctx)
-            .load(dataList[position].img_url[3])
-            .apply(options)
-            .into(holder.img3);
+                .load(dataList[position].img_url[3])
+                .apply(options)
+                .into(holder.img3);
         holder.plus.setOnClickListener {
             val intent: Intent = Intent(ctx, ThemeActivity::class.java)
             ctx.startActivity(intent)
