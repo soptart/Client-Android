@@ -11,6 +11,7 @@ import android.widget.RadioButton
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExMyProductData
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 class ApplyExMyProductAdapter (val dataList: ArrayList<ApplyExMyProductData>): RecyclerView.Adapter<ApplyExMyProductAdapter.Holder>(){
     lateinit var context: Context
@@ -26,7 +27,13 @@ class ApplyExMyProductAdapter (val dataList: ArrayList<ApplyExMyProductData>): R
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
 
-        Glide.with(context).load(dataList[position].my_product_img_url).into(holder.my_product_img)
+        var options: RequestOptions = RequestOptions().centerCrop()
+        Glide.with(context)
+                .load(dataList[position])
+                .apply(options)
+                .into(holder.my_product_img)
+
+
         holder.radid_btn.isChecked = mChecked.get(position)
 
         holder.radid_btn.setOnClickListener {

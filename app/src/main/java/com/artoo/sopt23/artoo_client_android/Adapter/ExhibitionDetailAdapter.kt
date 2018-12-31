@@ -30,10 +30,12 @@ class ExhibitionDetailAdapter(val dataList: ArrayList<ExhibitionDetailData>): Re
         holder.width.text = dataList[position].width.toString()
         holder.height.text = dataList[position].height.toString()
         holder.year.text = dataList[position].year
+        Glide.with(context).load(dataList[position].img_url).into(holder.img)
 
     }
 
     inner class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
+        val img : ImageView = itemView.findViewById(R.id.img_rv_item_ex_detail) as ImageView
         val title: TextView = itemView.findViewById(R.id.txt_rv_item_ex_detail_title) as TextView
         val writer: TextView = itemView.findViewById(R.id.txt_rv_item_ex_detail_writer) as TextView
         val type: TextView = itemView.findViewById(R.id.txt_rv_item_ex_detail_type) as TextView

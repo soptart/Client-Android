@@ -22,14 +22,10 @@ class ExhibitionDetailActivity : AppCompatActivity() {
 
         var dataList: ArrayList<ExhibitionDetailData> = ArrayList()
 
-        var img_url: ArrayList<String> = ArrayList()
-        img_url.add("http://webresizer.com/images2/bird1_after.jpg")
-        img_url.add("http://img.newspim.com/news/2018/03/31/1803311718414850.jpg")
-        img_url.add("http://www.newsa.co.kr/news/photo/201809/187929_146645_3554.jpg")
-        img_url.add("https://www.nemopan.com/files/attach/images/2582/269/848/493724be0c020.jpg")
-
-        dataList.add(ExhibitionDetailData(img_url,"무제다","강세린","페인팅",34,12,"2018"))
-        dataList.add(ExhibitionDetailData(img_url,"제목이다","한선민","초상화",224,123,"2018"))
+        dataList.add(ExhibitionDetailData("http://img.newspim.com/news/2018/03/31/1803311718414850.jpg","무제다","강세린","페인팅",34,12,"2018"))
+        dataList.add(ExhibitionDetailData("http://img.newspim.com/news/2018/03/31/1803311718414850.jpg","제목이다","한선민","초상화",224,123,"2018"))
+        dataList.add(ExhibitionDetailData("http://www.newsa.co.kr/news/photo/201809/187929_146645_3554.jpg","제목이다","김정음","어쩌고",4424,1223,"2018"))
+        dataList.add(ExhibitionDetailData("https://www.nemopan.com/files/attach/images/2582/269/848/493724be0c020.jpg","제목이다","자현쓰","초상화",224,123,"2018"))
 
         exhibitionDetailAdapter = ExhibitionDetailAdapter(dataList)
         rv_ex_detail.adapter = exhibitionDetailAdapter
