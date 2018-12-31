@@ -11,10 +11,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/NoActionBar">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,8 +26,9 @@
         </activity>
         <activity android:name=".ThemeActivity">
         </activity>
-        <activity android:name=".EnterTheExhibitionActivity"></activity>
-        <activity android:name=".ExhibitionDetailActivity"></activity>
+        <activity android:name=".EnterTheExhibitionActivity"/>
+        <activity android:name=".ExhibitionDetailActivity"/>
+        <activity android:name=".ApplyExhibitionActivity"/>
     </application>
 
 </manifest>

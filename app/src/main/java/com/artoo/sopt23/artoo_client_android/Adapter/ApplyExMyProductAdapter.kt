@@ -46,7 +46,6 @@ class ApplyExMyProductAdapter (val dataList: ArrayList<ApplyExMyProductData>): R
     fun checkBox (position: Int, value:Boolean) {
         if(value) {
             mChecked.put(position, true)
-            val a:Int = 0
         }else {
             mChecked.delete(position)
         }
