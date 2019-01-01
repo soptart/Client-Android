@@ -45,6 +45,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="23dp"
+                    android:background="@drawable/layout_underline"
                     app:tabPaddingStart="0dp"
                     app:tabPaddingEnd="0dp"
                     app:tabIndicatorFullWidth="false"

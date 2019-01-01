@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.fragment_mypage_deal.*
 import kotlin.collections.ArrayList
 
 class MypageDealFragment : Fragment() {
-
     lateinit var mypageDealRecyclerViewAdapter: MypageDealRecyclerViewAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
