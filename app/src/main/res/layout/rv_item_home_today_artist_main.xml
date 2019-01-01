@@ -59,7 +59,7 @@
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/today_next"
+                android:src="@drawable/join_next"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="169dp"
                 android:layout_marginRight="14dp"/>
