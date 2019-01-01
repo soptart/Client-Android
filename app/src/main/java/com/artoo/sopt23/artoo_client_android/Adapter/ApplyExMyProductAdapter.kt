@@ -11,10 +11,11 @@ import android.widget.RadioButton
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExMyProductData
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
+import org.jetbrains.anko.sdk25.coroutines.onCheckedChange
 
 class ApplyExMyProductAdapter (val dataList: ArrayList<ApplyExMyProductData>): RecyclerView.Adapter<ApplyExMyProductAdapter.Holder>(){
     lateinit var context: Context
-    var mChecked = SparseBooleanArray()
+    var selectedRadioBtn: RadioButton? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         context = parent.context
@@ -27,28 +28,27 @@ class ApplyExMyProductAdapter (val dataList: ArrayList<ApplyExMyProductData>): R
     override fun onBindViewHolder(holder: Holder, position: Int) {
 
         Glide.with(context).load(dataList[position].my_product_img_url).into(holder.my_product_img)
-        holder.radid_btn.isChecked = mChecked.get(position)
-
-        holder.radid_btn.setOnClickListener {
-            checkBox(position, !mChecked.get(position))
+        holder.radioButton.onCheckedChange { buttonView, isChecked ->
+            if(!isChecked){
+                if(selectedRadioBtn == buttonView) selectedRadioBtn = null
+            }
+            else{
+                if(selectedRadioBtn == null){
+                    selectedRadioBtn = buttonView as RadioButton
+                }
+                else{
+                    selectedRadioBtn!!.isChecked = false
+                    selectedRadioBtn = buttonView as RadioButton
+                }
+            }
         }
-
-
     }
 
     inner class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
         val my_product_img : ImageView = itemView.findViewById<View>(R.id.img_ex_my_product) as ImageView
-        var radid_btn : RadioButton = itemView.findViewById(R.id.radio_btn_apply_ex)
+        var radioButton : RadioButton = itemView.findViewById(R.id.radio_btn_apply_ex)
 
 
-    }
-
-    fun checkBox (position: Int, value:Boolean) {
-        if(value) {
-            mChecked.put(position, true)
-        }else {
-            mChecked.delete(position)
-        }
     }
 
 }
