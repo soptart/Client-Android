@@ -1,21 +1,9 @@
 package com.artoo.sopt23.artoo_client_android
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import com.artoo.sopt23.artoo_client_android.Network.ApplicationController
-import com.artoo.sopt23.artoo_client_android.Network.NetworkService
-import com.artoo.sopt23.artoo_client_android.Post.PostJoinResponse
-import com.google.gson.JsonObject
-import com.google.gson.JsonParser
 import kotlinx.android.synthetic.main.activity_join.*
-import org.jetbrains.anko.toast
-import org.json.JSONObject
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class JoinActivity : AppCompatActivity() {
 
@@ -60,6 +48,12 @@ class JoinActivity : AppCompatActivity() {
             ll_join_second.visibility = View.GONE
             ll_join_third.visibility = View.VISIBLE
         }
+        btn_join_bank.setOnClickListener {
+            /*val bottom_sheet_dialog = ProductUploadThemeFragment()
+            bottom_sheet_dialog.show(supportFragmentManager, bottom_sheet_dialog.tag)*/
+            //JoinBankDialog(this).show()
+            ll_join_bank.visibility = View.VISIBLE
+        }
         btn_join_next3.setOnClickListener {
             /*jsonObject.put("u_bank", input_bank)
             jsonObject.put("u_account", input_account)*/
@@ -72,6 +66,9 @@ class JoinActivity : AppCompatActivity() {
             jsonObject.put("u_dept", input_major)*/
 
             /*getJoinResponse()*/
+        }
+        btn_join_bank_close.setOnClickListener {
+            ll_join_bank.visibility - View.GONE
         }
     }
 
