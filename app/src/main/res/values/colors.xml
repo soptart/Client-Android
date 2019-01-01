@@ -10,5 +10,5 @@
     <color name="colorMainGrey">#777777</color>
     <color name="colorBackgroundWhite">#FFFFFF</color>
     <color name="highlight">#ff6f61</color>
-    <color name="colorNonSelectedTab">#c5c5c5</color>
+    <color name="colorNonSelectedTab">#434343</color>
 </resources>
