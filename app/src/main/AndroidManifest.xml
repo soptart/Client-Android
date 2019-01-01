@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".JoinActivity">
+        <activity android:name=".JoinActivity"/>
         <activity android:name=".ProductDetailActivity"/>
         <activity android:name=".ProductUploadActivity"/>
         <activity android:name=".FilterActivity"/>
