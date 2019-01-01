@@ -2,8 +2,6 @@ package com.artoo.sopt23.artoo_client_android
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Selection.removeSelection
-import android.text.Selection.setSelection
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
@@ -29,13 +27,13 @@ class ProductUploadActivity : AppCompatActivity() {
         setAlertDialog()
         setViewClickListener()
 
-        var categories = arrayOf("작품 카테고리","인물", "동물", "식물", "사물", "추상화", "풍경")
+        var categories = arrayOf("인물", "동물", "식물", "사물", "추상화", "풍경")
         spn_product_upload_category.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, categories)
 
-        var formats = arrayOf("작품 형태","드로잉", "페인팅", "동양화", "혼합매체", "조형/공예", "디지털")
+        var formats = arrayOf("드로잉", "페인팅", "동양화", "혼합매체", "조형/공예", "디지털")
         spn_product_upload_format.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, formats)
 
-        var licenses = arrayOf("CC 라이선스","CCL표시안함", "저작권표시", "저작권표시-비영리", "저작자표시-동일조건변경허락", "저작자표시-변경금지", "저작자표시-비영리-동일조건변경허락", "저작자표시-비영리-변경금지")
+        var licenses = arrayOf("CCL표시안함", "저작권표시", "저작권표시-비영리", "저작자표시-동일조건변경허락", "저작자표시-변경금지", "저작자표시-비영리-동일조건변경허락", "저작자표시-비영리-변경금지")
         spn_product_upload_license.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, licenses)
 
         setSpinnerItemSelectedListener()
@@ -70,11 +68,13 @@ class ProductUploadActivity : AppCompatActivity() {
     }
 
     private fun setSpinnerItemSelectedListener(){
+
         spn_product_upload_category.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {
 
             }
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+
             }
         }
         spn_product_upload_format.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
