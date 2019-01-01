@@ -4,79 +4,78 @@
     android:layout_height="56dp"
     android:orientation="horizontal">
     <RelativeLayout
-            android:id="@+id/btn_top_navi_first_arti_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-    >
+        android:id="@+id/btn_top_navi_first_arti_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-                android:id="@+id/tv_top_navi_first_arti_tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:text="최윤정"
-                android:textSize="17sp"
-                android:textColor="@color/colorEssential" android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" android:textAlignment="center"/>
+            android:id="@+id/tv_top_navi_first_arti_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="최윤정"
+            android:textSize="16sp"
+            android:textColor="@color/colorEssential"/>
     </RelativeLayout>
     <RelativeLayout
-            android:id="@+id/btn_top_navi_second_arti_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-    >
+        android:id="@+id/btn_top_navi_second_arti_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-                android:id="@+id/tv_top_navi_second_arti_tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="윤여진"
-                android:textSize="17sp"
-                android:textColor="@color/colorMainBlack"/>
+            android:id="@+id/tv_top_navi_second_arti_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="윤여진"
+            android:textSize="16sp"
+            android:textColor="@color/colorMainBlack"/>
     </RelativeLayout>
     <RelativeLayout
-            android:id="@+id/btn_top_navi_third_arti_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-    >
+        android:id="@+id/btn_top_navi_third_arti_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-                android:id="@+id/tv_top_navi_third_arti_tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="이세은"
-                android:textSize="17sp"
-                android:textColor="@color/colorMainBlack"/>
+            android:id="@+id/tv_top_navi_third_arti_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="이세은"
+            android:textSize="16sp"
+            android:textColor="@color/colorMainBlack"/>
     </RelativeLayout>
     <RelativeLayout
-            android:id="@+id/btn_top_navi_fourth_arti_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-    >
+        android:id="@+id/btn_top_navi_fourth_arti_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-                android:id="@+id/tv_top_navi_fourth_arti_tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="이다은"
-                android:textSize="17sp"
-                android:textColor="@color/colorMainBlack"/>
+            android:id="@+id/tv_top_navi_fourth_arti_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="이다은"
+            android:textSize="16sp"
+            android:textColor="@color/colorMainBlack"/>
     </RelativeLayout>
     <RelativeLayout
-            android:id="@+id/btn_top_navi_fifth_arti_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-    >
+        android:id="@+id/btn_top_navi_fifth_arti_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <TextView
-                android:id="@+id/tv_top_navi_fifth_arti_tab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="박유나"
-                android:textSize="17sp"
-                android:textColor="@color/colorMainBlack"/>
+            android:id="@+id/tv_top_navi_fifth_arti_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="박유나"
+            android:textSize="16sp"
+            android:textColor="@color/colorMainBlack"/>
     </RelativeLayout>
 </LinearLayout>

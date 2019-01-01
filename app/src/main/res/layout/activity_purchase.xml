@@ -305,7 +305,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="#4a4a4a"/>
-                    <CheckBox
+                    <RadioButton
+                            android:buttonTint="#FF6F61"
                             android:paddingVertical="10dp"
                             android:id="@+id/rbtn_purchase_agree_warning"
                             android:text="동의하기"
@@ -329,7 +330,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="#4a4a4a"/>
-                    <CheckBox
+                    <RadioButton
+                            android:buttonTint="#FF6F61"
                             android:paddingVertical="10dp"
                             android:id="@+id/rbtn_purchase_agree_refund"
                             android:text="동의하기"
