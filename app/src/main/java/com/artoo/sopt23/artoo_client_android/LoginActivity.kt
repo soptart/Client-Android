@@ -16,10 +16,11 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setOnClickListener() {
         btn_login.setOnClickListener {
-
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
         btn_login_join.setOnClickListener {
-            val intent = Intent(this, JoinActivity1::class.java)
+            val intent = Intent(this, JoinActivity::class.java)
             startActivity(intent)
         }
     }
