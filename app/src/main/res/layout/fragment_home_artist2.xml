@@ -5,8 +5,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
     <android.support.v7.widget.RecyclerView
-        android:paddingRight="60dp"
-        android:clipToPadding="false"
             android:nestedScrollingEnabled="false"
             android:id="@+id/rv_fragment_home_today_artist2_list"
             android:layout_width="wrap_content"
