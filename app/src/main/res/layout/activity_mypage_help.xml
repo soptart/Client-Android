@@ -8,15 +8,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="30dp"
+        android:paddingBottom="53.5dp"
         android:paddingTop="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:text="설정"
-            android:textColor="#353d46"
+            android:text="자주 묻는 질문"
+            android:textColor="#333333"
             android:textSize="22sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -31,17 +31,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="37dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="58dp"
-                android:text="자주 묻는 질문"
-                android:textColor="#353d46"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -50,7 +39,7 @@
                 <LinearLayout
                     android:id="@+id/help_list_btn1"
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -92,27 +81,39 @@
                     </RelativeLayout>
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/expandable_a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="미술전공자들의 작품을 공유하며 댓글로 도움을 주고 작품을 전시하며 판매할 수 있는 앱 입니다."
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="미술전공자들의 작품을 공유하며 댓글로 도움을\n주고 작품을 전시하며 판매할 수 있는 앱 입니다."
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -125,7 +126,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -168,27 +169,39 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/expandable_a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="아직 구상중에 있습니다."
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="아직 구상중에 있습니다"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -200,7 +213,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -243,27 +256,39 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/expandable_a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="돈을 벌게 됩니다"
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="돈을 벌게 됩니다"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -275,7 +300,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -318,27 +343,39 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/expandable_a4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="여진이에게 문의하세요"
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="여진이에게 문의하세요"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -350,7 +387,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -393,27 +430,39 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/expandable_a5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="직접 거래"
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="직접 거래"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -425,7 +474,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="55dp"
                     android:orientation="horizontal"
                     android:weightSum="7">
 
@@ -467,29 +516,39 @@
                     </RelativeLayout>
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/expandable_a6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="bottom"
-                    android:includeFontPadding="false"
-                    android:text="전시회"
-                    android:textColor="#434343"
-                    android:textSize="17sp"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:paddingEnd="54dp"
-                    android:visibility="gone"/>
-
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginHorizontal="20dp"
                     android:background="#dddddd" />
 
+                <LinearLayout
+                    android:id="@+id/expandable_a6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="전시회"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

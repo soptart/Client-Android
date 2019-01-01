@@ -8,6 +8,7 @@ import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExMyProductAdapter
 import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExhibitionAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExMyProductData
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExhibitionData
+import com.artoo.sopt23.artoo_client_android.Fragment.ExhibitionCheckFragment
 import com.artoo.sopt23.artoo_client_android.Fragment.ExhibitionOopsAlertFragment
 import kotlinx.android.synthetic.main.activity_apply_exhibition.*
 
@@ -21,7 +22,13 @@ class ApplyExhibitionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_apply_exhibition)
 
         btn_exhibition_apply.setOnClickListener {
-            setAlertDialog()
+//            if() {
+//
+//            } else if() {
+//
+//            }
+//            setOopsAlertDialog()
+            setCheckAlertDialog()
         }
 
 
@@ -54,8 +61,14 @@ class ApplyExhibitionActivity : AppCompatActivity() {
 
     }
 
-    private fun setAlertDialog() {
+    private fun setCheckAlertDialog() {
+        val alert_dialog = ExhibitionCheckFragment()
+        alert_dialog.show(supportFragmentManager, alert_dialog.tag)
+
+    }
+    private fun setOopsAlertDialog() {
         val alert_dialog = ExhibitionOopsAlertFragment()
         alert_dialog.show(supportFragmentManager, alert_dialog.tag)
+
     }
 }
