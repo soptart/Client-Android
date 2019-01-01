@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBlack"
+    android:orientation="vertical"
+    tools:context=".JoinActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="87dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:text="Artoo"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join us"
+            android:textSize="47sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_join_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" E-mail"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" Password"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp">
+
+            <ImageButton
+                    android:id="@+id/btn_join_next1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="200dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/join_next"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_join_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="49dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" Name"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" Phone"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" '-' 없이 입력"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" Address"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" ex. 서울시 광진구"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp">
+
+            <ImageButton
+                    android:id="@+id/btn_join_next2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="200dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/join_next"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_join_third"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="49dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 은행"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <Spinner
+                    android:id="@+id/spn_join_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:popupBackground="@color/colorMainBlack"
+                    android:backgroundTint="#b5b5b5"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_weight="4"
+                    android:background="#b5b5b5"
+                    android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="18dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 계좌번호"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" '-' 없이 입력"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:textColorHint="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp">
+
+            <ImageButton
+                    android:id="@+id/btn_join_next3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="200dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/join_next"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_join_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" University"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_university"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="대학교"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" Major"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"/>
+            <EditText
+                    android:id="@+id/et_join_major"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="학과"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textColor="#c6c6c6"
+                    android:backgroundTint="#c6c6c6"
+                    android:imeOptions="actionDone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* 미술대학 재학생, 졸업생만 적어주세요"
+                    android:textColor="@color/colorEssential"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageButton
+                    android:id="@+id/btn_join_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/join_sucess"
+                    android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

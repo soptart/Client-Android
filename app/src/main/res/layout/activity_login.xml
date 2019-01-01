@@ -93,14 +93,15 @@
         android:layout_marginTop="64dp"
         android:layout_marginRight="40dp">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="@android:color/transparent"
             android:text="로그인"
-            tools:src="@drawable/login_icon" />
+            android:src="@drawable/login_icon" />
+<!--
+        <Button android:id="@+id/btn_login" android:layout_width="match_parent" android:layout_height="wrap_content"/>-->
     </RelativeLayout>
 
     <RelativeLayout
