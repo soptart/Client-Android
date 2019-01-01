@@ -1,4 +1,4 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -6,13 +6,11 @@ import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.LinearLayout
-import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Data.ProductUploadTagLayoutData
 import com.artoo.sopt23.artoo_client_android.Fragment.ProductUploadAlertFragment
 import com.artoo.sopt23.artoo_client_android.Fragment.ProductUploadThemeFragment
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_product_upload.*
-import org.w3c.dom.Text
 import java.util.ArrayList
 
 class ProductUploadActivity : AppCompatActivity() {

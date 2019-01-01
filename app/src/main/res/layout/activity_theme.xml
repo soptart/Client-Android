@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ThemeActivity">
+        tools:context=".Activity.ThemeActivity">
     <LinearLayout
             android:id="@+id/ll_theme_main"
             android:orientation="vertical"

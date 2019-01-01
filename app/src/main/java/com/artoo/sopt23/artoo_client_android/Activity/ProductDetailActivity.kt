@@ -1,4 +1,4 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
@@ -7,10 +7,9 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.artoo.sopt23.artoo_client_android.Adapter.ProductDetailCommentRecyclerViewAdapter
 import com.artoo.sopt23.artoo_client_android.Data.CommentData
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_product_detail.*
-import org.jetbrains.anko.backgroundResource
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.textColor
 
 class ProductDetailActivity : AppCompatActivity() {
 
@@ -28,7 +27,7 @@ class ProductDetailActivity : AppCompatActivity() {
         ll_product_detail_info.visibility = View.GONE
 
         img_product_detail_product.setOnClickListener {
-            startActivity<ProductZoomActivity>("img_url" to "http://expert.eduhong.com/mallimg/2017/03/14/1489457076-4567.jpg")
+            startActivity<ProductZoomActivity>("pic_url" to "http://expert.eduhong.com/mallimg/2017/03/14/1489457076-4567.jpg")
         }
 
         ll_product_detail_like.setOnClickListener({

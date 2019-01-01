@@ -1,21 +1,14 @@
 package com.artoo.sopt23.artoo_client_android.Fragment
 
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.os.Message
 import android.support.design.widget.BottomSheetDialogFragment
-import android.support.v4.app.FragmentManager
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.artoo.sopt23.artoo_client_android.ProductUploadActivity
+import com.artoo.sopt23.artoo_client_android.Activity.ProductUploadActivity
 
 import com.artoo.sopt23.artoo_client_android.R
-import kotlinx.android.synthetic.main.activity_product_upload.view.*
-import kotlinx.android.synthetic.main.fragment_product_upload_theme.*
 import kotlinx.android.synthetic.main.fragment_product_upload_theme.view.*
 import org.jetbrains.anko.support.v4.toast
 

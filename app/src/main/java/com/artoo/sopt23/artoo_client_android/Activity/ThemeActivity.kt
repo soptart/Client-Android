@@ -1,16 +1,12 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.StaggeredGridLayoutManager
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.artoo.sopt23.artoo_client_android.Adapter.ThemeRecyclerViewAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ProductOverviewData
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_theme.*
-import kotlinx.android.synthetic.main.fragment_product.*
 
 class ThemeActivity : AppCompatActivity() {
 

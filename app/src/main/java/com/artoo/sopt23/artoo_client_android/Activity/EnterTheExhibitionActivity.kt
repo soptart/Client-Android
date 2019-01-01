@@ -1,11 +1,10 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.PagerSnapHelper
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_enter_the_exhibition.*
-import kotlinx.android.synthetic.main.activity_exhibition_detail.*
 
 class EnterTheExhibitionActivity : AppCompatActivity() {
 

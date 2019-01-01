@@ -1,4 +1,4 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExMyProductAdapter
 import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExhibitionAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExMyProductData
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExhibitionData
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_apply_exhibition.*
 
 class ApplyExhibitionActivity : AppCompatActivity() {

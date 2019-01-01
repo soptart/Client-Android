@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Adapter.MainExhibitionAdapter
-import com.artoo.sopt23.artoo_client_android.ApplyExhibitionActivity
+import com.artoo.sopt23.artoo_client_android.Activity.ApplyExhibitionActivity
 import com.artoo.sopt23.artoo_client_android.Data.MainExhibitionData
 
 import com.artoo.sopt23.artoo_client_android.R

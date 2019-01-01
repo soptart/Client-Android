@@ -1,20 +1,30 @@
-package com.artoo.sopt23.artoo_client_android
+package com.artoo.sopt23.artoo_client_android.Activity
 
-import android.app.Activity
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.RelativeLayout
 import com.artoo.sopt23.artoo_client_android.Adapter.MainFragmentStatePagerAdapter
-import com.artoo.sopt23.artoo_client_android.R.id.tl_bottom_navi_act_bottom_menu
-import com.artoo.sopt23.artoo_client_android.R.id.vp_bottom_navi_act_frag_pager
+import com.artoo.sopt23.artoo_client_android.Data.Response.Get.GetTodayArtistResponse
+import com.artoo.sopt23.artoo_client_android.Data.TodayArtistData
+import com.artoo.sopt23.artoo_client_android.Network.ApplicationController
+import com.artoo.sopt23.artoo_client_android.Network.NetworkService
+import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
     val PRODUCT_FRAGMENT: Int = 1
+
+    lateinit public var todayArtist: ArrayList<TodayArtistData>
+
+    val networkService: NetworkService by lazy{
+        ApplicationController.instance.networkService
+    }
 
     public var filter_size: String? = null
     public var filter_type: String? = null
@@ -24,13 +34,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        configureBottomNavigation()
+        getTodayArtist()
     }
 
-    private fun configureBottomNavigation() {
+    fun getTodayArtist(){
+        val getTodayArtistResponse = networkService.getTodayArtistResponse()
+        getTodayArtistResponse.enqueue(object: Callback<GetTodayArtistResponse>{
+            override fun onFailure(call: Call<GetTodayArtistResponse>, t: Throwable) {
+                Log.e("board list fail", t.toString())
+            }
+
+            override fun onResponse(call: Call<GetTodayArtistResponse>, response: Response<GetTodayArtistResponse>) {
+                if(response.isSuccessful){
+                    configureBottomNavigation(response.body()!!.data)
+                }
+            }
+        })
+    }
+
+    private fun configureBottomNavigation(todayArtistData: ArrayList<TodayArtistData>) {
         vp_bottom_navi_act_frag_pager.adapter = MainFragmentStatePagerAdapter(
             supportFragmentManager,
-            4
+            4,
+            todayArtistData
+
         ) //vp_bottom_navi_act_frag_pager.offscreenPageLimit = 3
 // ViewPager와 Tablayout을 엮어줍니다!
         tl_bottom_navi_act_bottom_menu.setupWithViewPager(vp_bottom_navi_act_frag_pager)

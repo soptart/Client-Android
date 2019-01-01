@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.artoo.sopt23.artoo_client_android.Data.ProductOverviewData
-import com.artoo.sopt23.artoo_client_android.ProductDetailActivity
+import com.artoo.sopt23.artoo_client_android.Activity.ProductDetailActivity
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions

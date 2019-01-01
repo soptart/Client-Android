@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EnterTheExhibitionActivity">
+    tools:context=".Activity.EnterTheExhibitionActivity">
 
     <!--알파값으로 설정한거 디자이너랑 상의-->
 

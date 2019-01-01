@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:background="@color/colorMainBlack"
         android:orientation="vertical"
-        tools:context=".JoinActivity">
+        tools:context=".Activity.JoinActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"

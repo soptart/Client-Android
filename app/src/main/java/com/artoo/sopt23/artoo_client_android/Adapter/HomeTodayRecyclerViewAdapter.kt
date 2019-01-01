@@ -8,14 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.artoo.sopt23.artoo_client_android.Data.TodayArtistData
+import com.artoo.sopt23.artoo_client_android.Data.TodayArtistProductData
 import com.artoo.sopt23.artoo_client_android.Data.TodayMainData
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
 
-class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList<TodayMainData>, val dataListArtist:ArrayList<TodayArtistData>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataMain: TodayMainData, val dataListArtistProduct:ArrayList<TodayArtistProductData>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         if(viewType == 0){
             Log.i("hitag","0")
@@ -30,7 +28,7 @@ class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList
 
     }
 
-    override fun getItemCount(): Int = dataListMain.size + dataListArtist.size
+    override fun getItemCount(): Int = 1 + dataListArtistProduct.size
 
     override fun getItemViewType(position: Int): Int {
         if(position == 0){
@@ -43,17 +41,17 @@ class HomeTodayRecyclerViewAdapter(val ctx: Context, val dataListMain: ArrayList
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if(position == 0)
         {
-            (holder as HolderMain).university.text = dataListMain[position].university
-            (holder).name.text = dataListMain[position].name
-            (holder).intro.text = dataListMain[position].intro
+            (holder as HolderMain).university.text = dataMain.university
+            (holder).name.text = dataMain.name
+            (holder).intro.text = dataMain.intro
             Glide.with(ctx)
-                .load(dataListMain[position].back_img_url)
+                .load(dataMain.back_img_url)
                 .into((holder).backimg)
         }
         else {
-            (holder as HolderArtist).title.text = dataListArtist[position-1].title
+            (holder as HolderArtist).title.text = dataListArtistProduct[position-1].a_name
             Glide.with(ctx)
-                .load(dataListArtist[position-1].img_url)
+                .load(dataListArtistProduct[position-1].pic_url)
                 .into((holder).img)
         }
     }

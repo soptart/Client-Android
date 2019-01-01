@@ -8,8 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import com.artoo.sopt23.artoo_client_android.Data.MainExhibitionData
-import com.artoo.sopt23.artoo_client_android.EnterTheExhibitionActivity
+import com.artoo.sopt23.artoo_client_android.Activity.EnterTheExhibitionActivity
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -35,7 +34,8 @@ class MainExhibitionAdapter (val main_ex : ArrayList<String>): RecyclerView.Adap
 //            //intent.putExtra("",)
 //            context.startActivity(intent)
 
-            context.startActivity(Intent(context,EnterTheExhibitionActivity::class.java))
+            context.startActivity(Intent(context,
+                EnterTheExhibitionActivity::class.java))
         }
 
 

@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Adapter.HomeArtistFragmentStatePagerAdapter
+import com.artoo.sopt23.artoo_client_android.Data.TodayArtistData
 
 import com.artoo.sopt23.artoo_client_android.R
 import com.artoo.sopt23.artoo_client_android.R.id.btn_home_first_ticket
@@ -23,6 +24,7 @@ import kotlinx.android.synthetic.main.top_navigation_tab_home_artist.*
 
 class HomeTodayFragment : Fragment() {
 
+    lateinit var todayArtistData: ArrayList<TodayArtistData>
     lateinit var inflater: LayoutInflater
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -38,7 +40,7 @@ class HomeTodayFragment : Fragment() {
     private fun configureTopNavigation(view: View) {
 
         //Artist Tab
-        view.vp_top_navi_act_frag_pager_home_artist.adapter = HomeArtistFragmentStatePagerAdapter(childFragmentManager, 5)
+        view.vp_top_navi_act_frag_pager_home_artist.adapter = HomeArtistFragmentStatePagerAdapter(childFragmentManager, 5, todayArtistData)
         view.tl_top_navi_act_top_menu_home_artist.setupWithViewPager(view.vp_top_navi_act_frag_pager_home_artist)
 
         val topNaviLayout : View = inflater.inflate(R.layout.top_navigation_tab_home_artist, null, false)

@@ -1,22 +1,17 @@
 package com.artoo.sopt23.artoo_client_android.Fragment
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.artoo.sopt23.artoo_client_android.Adapter.ProductRecyclerViewAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ProductOverviewData
-import com.artoo.sopt23.artoo_client_android.Data.ThemeData
-import com.artoo.sopt23.artoo_client_android.FilterActivity
-import com.artoo.sopt23.artoo_client_android.MainActivity
-import org.jetbrains.anko.startActivityForResult
+import com.artoo.sopt23.artoo_client_android.Activity.FilterActivity
+import com.artoo.sopt23.artoo_client_android.Activity.MainActivity
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_product.*
