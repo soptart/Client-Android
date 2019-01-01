@@ -28,4 +28,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- Join Bank Dialog theme -->
+    <style name="bankDialog" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>
