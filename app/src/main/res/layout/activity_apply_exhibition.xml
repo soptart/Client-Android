@@ -181,7 +181,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#dddddd"/>
+        android:background="#dddddd"
+        android:layout_marginHorizontal="20dp"/>
 
 
     <LinearLayout

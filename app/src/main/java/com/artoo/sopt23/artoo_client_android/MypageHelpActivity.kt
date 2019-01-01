@@ -14,13 +14,15 @@ class MypageHelpActivity : AppCompatActivity() {
     lateinit var help_list_btn4 : LinearLayout
     lateinit var help_list_btn5 : LinearLayout
     lateinit var help_list_btn6 : LinearLayout
-
+    lateinit var help_list_btn7 : LinearLayout
+    lateinit var help_list_btn8 : LinearLayout
+    lateinit var help_list_btn9 : LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage_help)
 
-        var onClick = View.OnClickListener { v: View? ->
+        val onClick = View.OnClickListener { v: View? ->
             when(v!!.id) {
 
                 R.id.help_list_btn1 -> {
@@ -95,6 +97,42 @@ class MypageHelpActivity : AppCompatActivity() {
                     }
 
                 }
+                R.id.help_list_btn7 -> {
+                    if(expandable_a7.visibility == View.GONE) {
+                        help_list_arrow7.setBackgroundResource(R.drawable.arrow_up_black)
+                        help_list_q7.setTextColor(Color.parseColor("#ff6f61"))
+                        expandable_a7.visibility = View.VISIBLE
+                    } else {
+                        help_list_arrow7.setBackgroundResource(R.drawable.arrow_down_black)
+                        help_list_q7.setTextColor(Color.parseColor("#434343"))
+                        expandable_a7.visibility = View.GONE
+                    }
+
+                }
+                R.id.help_list_btn8 -> {
+                    if(expandable_a8.visibility == View.GONE) {
+                        help_list_arrow8.setBackgroundResource(R.drawable.arrow_up_black)
+                        help_list_q8.setTextColor(Color.parseColor("#ff6f61"))
+                        expandable_a8.visibility = View.VISIBLE
+                    } else {
+                        help_list_arrow8.setBackgroundResource(R.drawable.arrow_down_black)
+                        help_list_q8.setTextColor(Color.parseColor("#434343"))
+                        expandable_a8.visibility = View.GONE
+                    }
+
+                }
+                R.id.help_list_btn9 -> {
+                    if(expandable_a9.visibility == View.GONE) {
+                        help_list_arrow9.setBackgroundResource(R.drawable.arrow_up_black)
+                        help_list_q9.setTextColor(Color.parseColor("#ff6f61"))
+                        expandable_a9.visibility = View.VISIBLE
+                    } else {
+                        help_list_arrow9.setBackgroundResource(R.drawable.arrow_down_black)
+                        help_list_q9.setTextColor(Color.parseColor("#434343"))
+                        expandable_a9.visibility = View.GONE
+                    }
+
+                }
             }
         }
 
@@ -115,6 +153,15 @@ class MypageHelpActivity : AppCompatActivity() {
 
         help_list_btn6 = findViewById(R.id.help_list_btn6)
         help_list_btn6.setOnClickListener(onClick)
+
+        help_list_btn7 = findViewById(R.id.help_list_btn7)
+        help_list_btn7.setOnClickListener(onClick)
+
+        help_list_btn8 = findViewById(R.id.help_list_btn8)
+        help_list_btn8.setOnClickListener(onClick)
+
+        help_list_btn9 = findViewById(R.id.help_list_btn9)
+        help_list_btn9.setOnClickListener(onClick)
     }
 
 

@@ -119,12 +119,12 @@
 
 
             <LinearLayout
-                android:id="@+id/help_list_btn2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/help_list_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:orientation="horizontal"
@@ -146,7 +146,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="bottom"
                             android:includeFontPadding="false"
-                            android:text="구매는 어떻게 하나요?"
+                            android:text="전시회는 무엇인가요?"
                             android:textColor="#434343"
                             android:textSize="17sp" />
 
@@ -188,7 +188,7 @@
                         android:layout_marginLeft="20dp"
                         android:gravity="bottom"
                         android:includeFontPadding="false"
-                        android:text="아직 구상중에 있습니다"
+                        android:text="그건 바로 바로 바로 전시회"
                         android:textColor="#434343"
                         android:textSize="17sp"
                         android:paddingTop="20dp"
@@ -206,12 +206,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/help_list_btn3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/help_list_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:orientation="horizontal"
@@ -233,7 +233,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="bottom"
                             android:includeFontPadding="false"
-                            android:text="내 그림 판매 발생시 어떻게 하나요?"
+                            android:text="구매는 어떻게 하나요?"
                             android:textColor="#434343"
                             android:textSize="17sp" />
 
@@ -275,7 +275,7 @@
                         android:layout_marginLeft="20dp"
                         android:gravity="bottom"
                         android:includeFontPadding="false"
-                        android:text="돈을 벌게 됩니다"
+                        android:text="구매 버튼을 누릅니다"
                         android:textColor="#434343"
                         android:textSize="17sp"
                         android:paddingTop="20dp"
@@ -293,12 +293,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/help_list_btn4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/help_list_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:orientation="horizontal"
@@ -320,7 +320,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="bottom"
                             android:includeFontPadding="false"
-                            android:text="환불은 어떻게 하나요?"
+                            android:text="후기 작성은 꼭 해야하나요?"
                             android:textColor="#434343"
                             android:textSize="17sp" />
 
@@ -362,7 +362,7 @@
                         android:layout_marginLeft="20dp"
                         android:gravity="bottom"
                         android:includeFontPadding="false"
-                        android:text="여진이에게 문의하세요"
+                        android:text="후기 작성하면 좋습니다"
                         android:textColor="#434343"
                         android:textSize="17sp"
                         android:paddingTop="20dp"
@@ -380,12 +380,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/help_list_btn5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/help_list_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:orientation="horizontal"
@@ -407,7 +407,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="bottom"
                             android:includeFontPadding="false"
-                            android:text="직거래는 무엇인가요?"
+                            android:text="내 그림 판매 발생시 어떻게 하나요?"
                             android:textColor="#434343"
                             android:textSize="17sp" />
 
@@ -449,7 +449,7 @@
                         android:layout_marginLeft="20dp"
                         android:gravity="bottom"
                         android:includeFontPadding="false"
-                        android:text="직접 거래"
+                        android:text="내 그림을 팝니다"
                         android:textColor="#434343"
                         android:textSize="17sp"
                         android:paddingTop="20dp"
@@ -467,12 +467,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/help_list_btn6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/help_list_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:orientation="horizontal"
@@ -494,7 +494,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="bottom"
                             android:includeFontPadding="false"
-                            android:text="전시회는 무엇인가요?"
+                            android:text="환불은 어떻게 하나요?"
                             android:textColor="#434343"
                             android:textSize="17sp" />
 
@@ -516,6 +516,7 @@
                     </RelativeLayout>
 
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -535,13 +536,12 @@
                         android:layout_marginLeft="20dp"
                         android:gravity="bottom"
                         android:includeFontPadding="false"
-                        android:text="전시회"
+                        android:text="여진이에게 문의하세요"
                         android:textColor="#434343"
                         android:textSize="17sp"
                         android:paddingTop="20dp"
                         android:paddingBottom="20dp"
                         android:paddingEnd="54dp"/>
-
 
                     <View
                         android:layout_width="match_parent"
@@ -549,7 +549,272 @@
                         android:background="#dddddd" />
 
                 </LinearLayout>
+
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/help_list_btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/help_list_q7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="bottom"
+                            android:includeFontPadding="false"
+                            android:text="직거래는 무엇인가요?"
+                            android:textColor="#434343"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/help_list_arrow7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/arrow_down_black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="여진이에게 문의하세요"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/help_list_btn8"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/help_list_q8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="bottom"
+                            android:includeFontPadding="false"
+                            android:text="직거래시 수수료는 구매자가 내야하나요?"
+                            android:textColor="#434343"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/help_list_arrow8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/arrow_down_black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="여진이에게 문의하세요"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/help_list_btn9"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:background="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/help_list_q9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="bottom"
+                            android:includeFontPadding="false"
+                            android:text="직거래시 거래가 취소되면 어떻게 하나요?"
+                            android:textColor="#434343"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/help_list_arrow9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/arrow_down_black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:id="@+id/expandable_a9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f1f1f1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:text="여진이에게 문의하세요"
+                        android:textColor="#434343"
+                        android:textSize="17sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="54dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
     </ScrollView>

@@ -11,7 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import com.artoo.sopt23.artoo_client_android.Adapter.MypageFragmentStatePageAdapter
-import com.artoo.sopt23.artoo_client_android.MypageHelpActivity
+import com.artoo.sopt23.artoo_client_android.MypagePreferencesActivity
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_mypage.*
@@ -41,7 +41,7 @@ class MypageFragment : Fragment() {
         }
 
         view.btn_mypage_help.setOnClickListener {
-            var intent = Intent(activity?.applicationContext, MypageHelpActivity::class.java)
+            var intent = Intent(activity?.applicationContext, MypagePreferencesActivity::class.java)
             startActivity(intent)
         }
 
