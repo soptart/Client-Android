@@ -84,10 +84,10 @@
                                 android:hint="띄어쓰기 포함 15자 이내"
                                 android:textSize="13sp"/>
                         <Spinner
-                                android:id="@+id/spn_product_upload_format"
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1"/>
+                            android:id="@+id/spn_product_upload_format"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
                         <Spinner
                                 android:id="@+id/spn_product_upload_category"
                                 android:layout_width="match_parent"

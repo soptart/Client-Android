@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Data.AlarmExhibitionData
-import com.artoo.sopt23.artoo_client_android.Fragment.AlarmCancelDialogFragment
+import com.artoo.sopt23.artoo_client_android.Fragment.AlarmExhibitionCancelDialogFragment
 import com.artoo.sopt23.artoo_client_android.R
 
 class AlarmExhibitionRecyclerViewAdapter(val ctx: Context,val dataList: ArrayList<AlarmExhibitionData>): RecyclerView.Adapter<AlarmExhibitionRecyclerViewAdapter.Holder>() {
@@ -30,7 +30,7 @@ class AlarmExhibitionRecyclerViewAdapter(val ctx: Context,val dataList: ArrayLis
         holder.product_title.text = dataList[position].product_title
 
         holder.btn_cancle.setOnClickListener {
-            val cancel_dialog = AlarmCancelDialogFragment()
+            val cancel_dialog = AlarmExhibitionCancelDialogFragment()
             cancel_dialog.show((ctx as FragmentActivity).supportFragmentManager, cancel_dialog.tag)
         }
     }

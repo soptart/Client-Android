@@ -1,6 +1,7 @@
 package com.artoo.sopt23.artoo_client_android.Adapter
 
 import android.content.Context
+import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Data.AlarmSellData
+import com.artoo.sopt23.artoo_client_android.Fragment.AlarmDealCancelDialogFragment
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -39,7 +41,8 @@ class AlarmSellRecyclerViewAdapter(val ctx: Context, val dataListSell: ArrayList
             (holder).buyer_number.text = dataListSell[position].buyer_number
             (holder).buyer_address.text = dataListSell[position].buyer_address
             (holder).btn_cancel.setOnClickListener {
-
+                val cancel_dialog = AlarmDealCancelDialogFragment()
+                cancel_dialog.show((ctx as FragmentActivity).supportFragmentManager, cancel_dialog.tag)
             }
         }
         else {
