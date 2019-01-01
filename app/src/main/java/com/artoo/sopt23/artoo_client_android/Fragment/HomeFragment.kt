@@ -67,6 +67,7 @@ class HomeFragment : Fragment() {
             tv_top_navi_home_today_tab.setTextColor(resources.getColor(R.color.colorMainGrey))
             tv_top_navi_home_theme_tab.setTextColor(resources.getColor(R.color.colorMainBlack))
         }
+
     }
 
 }

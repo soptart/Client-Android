@@ -75,18 +75,11 @@ class FilterActivity : AppCompatActivity() {
         img_filter_type_mixing.isSelected = false
         img_filter_type_digital.isSelected = false
 
-        // init all
-        txt_filter_size_all.setTextColor(0x8c8c8c)
-        txt_filter_type_all.setTextColor(0x8c8c8c)
-        txt_filter_category_all.setTextColor(0x8c8c8c)
-
-        if(filter_size == null) txt_filter_size_all.setTextColor(0xff6f61)
         if(filter_size == "S") img_filter_size_s.isSelected = true
         if(filter_size == "M") img_filter_size_m.isSelected = true
         if(filter_size == "L") img_filter_size_l.isSelected = true
         if(filter_size == "XL") img_filter_size_xl.isSelected = true
 
-        if(filter_type == null) txt_filter_type_all.setTextColor(0xff6f61)
         if(filter_type == "조형/공예") img_filter_type_crafting.isSelected = true
         if(filter_type == "드로잉") img_filter_type_drawing.isSelected = true
         if(filter_type == "혼합 매체") img_filter_type_mixing.isSelected = true
@@ -94,7 +87,6 @@ class FilterActivity : AppCompatActivity() {
         if(filter_type == "동양화") img_filter_type_oriental.isSelected = true
         if(filter_type == "페인팅") img_filter_type_painting.isSelected = true
 
-        if(filter_category == null) txt_filter_category_all.setTextColor(0xff6f61)
         if(filter_category == "추상") img_filter_category_abstract.isSelected = true
         if(filter_category == "식물") img_filter_category_plant.isSelected = true
         if(filter_category == "사물") img_filter_category_object.isSelected = true
@@ -186,7 +178,7 @@ class FilterActivity : AppCompatActivity() {
             updateFilterView()
         }
 
-        txt_filter_apply.setOnClickListener {
+        img_filter_apply.setOnClickListener {
             val intent: Intent = Intent()
             intent.putExtra("filter_size", filter_size)
             intent.putExtra("filter_type", filter_type)

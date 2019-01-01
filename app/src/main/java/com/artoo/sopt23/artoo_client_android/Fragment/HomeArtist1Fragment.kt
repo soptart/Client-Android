@@ -14,6 +14,7 @@ import com.artoo.sopt23.artoo_client_android.Data.TodayMainData
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_home_artist1.*
+import java.util.*
 
 
 class HomeArtist1Fragment : Fragment() {
@@ -34,11 +35,11 @@ class HomeArtist1Fragment : Fragment() {
         var dataListMain: ArrayList<TodayMainData> = ArrayList()
         var dataListArtist : ArrayList<TodayArtistData> = ArrayList()
         dataListMain.add(TodayMainData("홍익대학교","최윤정작가","안녕하세열","http://img.vogue.co.kr/vogue/2015/04/style_579bbf94e23cc.jpg"))
-        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니","http://img.vogue.co.kr/vogue/2015/04/style_579bbf94e23cc.jpg"))
-        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니","http://img.vogue.co.kr/vogue/2015/04/style_579d193814eb1.jpg"))
-        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니","https://i.pinimg.com/originals/2f/f2/e2/2ff2e2cf884a51223f26af6a93a546c3.jpg"))
-        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니","https://usercontents-c.styleshare.kr/images/17504647/640x-"))
-        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니","https://i.pinimg.com/originals/98/a5/14/98a5148af83aa0dcbb1ea4ded7392226.png"))
+        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니",1,"http://img.vogue.co.kr/vogue/2015/04/style_579bbf94e23cc.jpg"))
+        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니",2,"http://img.vogue.co.kr/vogue/2015/04/style_579d193814eb1.jpg"))
+        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니",3,"https://i.pinimg.com/originals/2f/f2/e2/2ff2e2cf884a51223f26af6a93a546c3.jpg"))
+        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니",4,"https://usercontents-c.styleshare.kr/images/17504647/640x-"))
+        dataListArtist.add(TodayArtistData("열세글자입니다열세글자입니",5,"https://i.pinimg.com/originals/98/a5/14/98a5148af83aa0dcbb1ea4ded7392226.png"))
 
         /*
         else if(position==1){
@@ -70,6 +71,7 @@ class HomeArtist1Fragment : Fragment() {
             dataList.add(TodayMainData("열세글자입니다열세글자입니","2018","https://i.pinimg.com/originals/98/a5/14/98a5148af83aa0dcbb1ea4ded7392226.png"))
         }
 */
+
         homeTodayRecyclerViewAdapter = HomeTodayRecyclerViewAdapter(activity!!,dataListMain,dataListArtist)
         rv_fragment_home_today_artist1_list.adapter = homeTodayRecyclerViewAdapter
         rv_fragment_home_today_artist1_list.layoutManager = LinearLayoutManager(activity,LinearLayout.HORIZONTAL,false)
