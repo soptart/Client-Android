@@ -46,7 +46,8 @@ class HomeThemeRecyclerViewAdapter(val dataList: ArrayList<ThemeData>): Recycler
         Glide.with(ctx)
                 .load(dataList[position].img_url[3])
                 .apply(options)
-                .into(holder.img3);
+                .into(holder.img3)
+
         holder.plus.setOnClickListener {
             val intent: Intent = Intent(ctx, ThemeActivity::class.java)
             ctx.startActivity(intent)

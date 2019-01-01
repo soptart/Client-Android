@@ -5,79 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailProductActivity">
-
+    tools:context=".ProductDetailActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <ImageView
-            android:id="@+id/iv_activity_detail_product"
+            android:id="@+id/img_detail_product"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/backgrounds/scenic[16]" />
-
+            android:layout_height="140dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[16]"
+            android:scaleType="centerCrop"/>
         <TextView
-            android:id="@+id/tv_activity_detail_product_title"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="13.3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="9dp"
-            android:text="TextView"
-            android:textColor="#4a4a4a"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp">
-
-            <TextView
-                android:id="@+id/tv_activity_detail_product_university"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="홍익대학교"
-                android:textColor="#4a4a4a"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tv_activity_detail_product_artist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_activity_detail_product_university"
-                android:text="김옥희"
-                android:textColor="#4a4a4a"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/iv_activity_detail_product_like"
-                android:layout_width="18dp"
-                android:layout_height="16dp"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="6dp"
-                android:layout_toLeftOf="@id/tv_activity_detail_product_likenum"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:id="@+id/tv_activity_detail_product_likenum"
-                android:layout_width="18dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="56"
-                android:textSize="16sp"
-                android:layout_marginRight="22dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:background="#e9e9e9">
-        </RelativeLayout>
+            android:text="Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4a4a4a"/>
     </LinearLayout>
 </ScrollView>

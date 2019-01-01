@@ -24,11 +24,11 @@ class HomeThemeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        //setRecyclerView()
+        setRecyclerView()
     }
 
 
-    /*private fun setRecyclerView() {
+    private fun setRecyclerView() {
         var dataList: ArrayList<ThemeData> = ArrayList()
 
         var img_url: ArrayList<String> = ArrayList()
@@ -41,7 +41,7 @@ class HomeThemeFragment : Fragment() {
         dataList.add(ThemeData("# 카페에 거는 순간 감성카페로 등극!", "카페 분위기에 어울리는 그림을 찾아보자", img_url))
 
         homeThemeRecyclerViewAdapter = HomeThemeRecyclerViewAdapter(dataList)
-        rv_fragment_theme_list.adapter = homeThemeRecyclerViewAdapter
-        rv_fragment_theme_list.layoutManager = LinearLayoutManager(activity)
-    }*/
+        //rv_fragment_theme_list.adapter = homeThemeRecyclerViewAdapter
+        //rv_fragment_theme_list.layoutManager = LinearLayoutManager(activity)
+    }
 }

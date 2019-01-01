@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.artoo.sopt23.artoo_client_android.Data.ProductOverviewData
+import com.artoo.sopt23.artoo_client_android.ProductDetailActivity
 import com.artoo.sopt23.artoo_client_android.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import org.jetbrains.anko.startActivity
 
 class ThemeRecyclerViewAdapter(val dataList: ArrayList<ProductOverviewData>): RecyclerView.Adapter<ThemeRecyclerViewAdapter.Holder>(){
     lateinit var ctx: Context
@@ -29,6 +31,10 @@ class ThemeRecyclerViewAdapter(val dataList: ArrayList<ProductOverviewData>): Re
             .load(dataList[position].url)
             .apply(options)
             .into(holder.img_product)
+
+        holder.img_product.setOnClickListener {
+            ctx.startActivity<ProductDetailActivity>("pid" to dataList[position].Id)
+        }
     }
 
     inner class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
