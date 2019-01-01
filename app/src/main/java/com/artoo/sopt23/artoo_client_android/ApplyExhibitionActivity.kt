@@ -8,6 +8,7 @@ import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExMyProductAdapter
 import com.artoo.sopt23.artoo_client_android.Adapter.ApplyExhibitionAdapter
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExMyProductData
 import com.artoo.sopt23.artoo_client_android.Data.ApplyExhibitionData
+import com.artoo.sopt23.artoo_client_android.Fragment.ExhibitionOopsAlertFragment
 import kotlinx.android.synthetic.main.activity_apply_exhibition.*
 
 class ApplyExhibitionActivity : AppCompatActivity() {
@@ -18,6 +19,11 @@ class ApplyExhibitionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apply_exhibition)
+
+        btn_exhibition_apply.setOnClickListener {
+            setAlertDialog()
+        }
+
 
         var snapHelper = PagerSnapHelper()
         snapHelper.attachToRecyclerView(rv_apply_ex_my_product)
@@ -46,5 +52,10 @@ class ApplyExhibitionActivity : AppCompatActivity() {
         rv_apply_ex_radio.layoutManager = LinearLayoutManager(this)
 
 
+    }
+
+    private fun setAlertDialog() {
+        val alert_dialog = ExhibitionOopsAlertFragment()
+        alert_dialog.show(supportFragmentManager, alert_dialog.tag)
     }
 }

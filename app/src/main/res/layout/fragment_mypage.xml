@@ -9,18 +9,25 @@
         android:orientation="vertical"
         tools:context=".Fragment.MypageFragment">
 
-    <RelativeLayout
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        android:gravity="end">
         <Button
                 android:id="@+id/btn_mypage_alert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_alignParentEnd="true"
+                android:layout_marginRight="14.1dp"
                 android:text="알림"/>
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btn_mypage_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21.6dp"
+            android:text="설정"/>
+
+    </LinearLayout>
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

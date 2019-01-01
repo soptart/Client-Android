@@ -1,6 +1,7 @@
 package com.artoo.sopt23.artoo_client_android.Fragment
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.TabLayout
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import com.artoo.sopt23.artoo_client_android.Adapter.MypageFragmentStatePageAdapter
+import com.artoo.sopt23.artoo_client_android.MypageHelpActivity
 
 import com.artoo.sopt23.artoo_client_android.R
 import kotlinx.android.synthetic.main.fragment_mypage.*
@@ -36,6 +38,11 @@ class MypageFragment : Fragment() {
             tv_mypage_user_intro.visibility = View.VISIBLE
             et_mypage_user_intro.visibility = View.GONE
             btn_mypage_update_intro_finish.visibility = View.GONE
+        }
+
+        view.btn_mypage_help.setOnClickListener {
+            var intent = Intent(activity?.applicationContext, MypageHelpActivity::class.java)
+            startActivity(intent)
         }
 
         return view
