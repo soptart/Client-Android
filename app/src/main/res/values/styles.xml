@@ -19,6 +19,10 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="ProductSearchView" parent="Widget.AppCompat.SearchView" >
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <!-- Tab layout selecte theme.-->
     <style name="TabLayoutTextStyle">
         <item name="android:textStyle">bold</item>
