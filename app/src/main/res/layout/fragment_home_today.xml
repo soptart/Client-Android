@@ -43,16 +43,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="40dp"
                     android:layout_marginTop="23dp"
-                    android:background="@drawable/layout_underline"
-                    app:tabPaddingStart="0dp"
-                    app:tabPaddingEnd="0dp"
-                    app:tabIndicatorFullWidth="false"
                     app:tabSelectedTextColor="@color/colorEssential"
                     app:tabIndicatorColor="@color/colorEssential"/>
 
-            <com.artoo.sopt23.artoo_client_android.CustomView.SwipeLockableViewPager
+            <android.support.v4.view.ViewPager
                     android:id="@+id/vp_top_navi_act_frag_pager_home_artist"
                     android:layout_width="match_parent"
                     android:layout_height="444dp"
@@ -62,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="68dp"
                     android:orientation="vertical"
+                    android:layout_marginTop="30dp"
                     android:layout_marginLeft="40dp">
 
                 <TextView
@@ -74,7 +71,7 @@
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="앗!투! 시리"
+                        android:text="앗!투! 시리즈"
                         android:textSize="24sp"
                         android:textColor="#2f2f2f"
                         android:textStyle="bold"/>

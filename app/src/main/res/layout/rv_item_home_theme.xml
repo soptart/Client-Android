@@ -1,17 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                                    xmlns:card_view="http://schemas.android.com/tools"
-                                    app:cardCornerRadius="5dp"
-                                    android:layout_marginLeft="15dp"
-                                    card_view:cardBackgroundColor="@android:color/white">
-    <ImageView
-            android:id="@+id/img_rv_item_home_theme"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:adjustViewBounds="true"
-            android:layout_marginTop="0dp"
-    />
-</android.support.v7.widget.CardView>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+>
+    <TextView
+            android:id= "@+id/txt_rv_item_home_theme_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="# 거실에 걸어두면 이쁠 것 같아!"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+    <TextView
+            android:id="@+id/txt_rv_item_home_theme_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:text="허전했던 벽에 한 번 걸어보자"
+            android:textColor="#b0b3ba"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardUseCompatPadding="true">
+
+            <com.artoo.sopt23.artoo_client_android.CustomView.SquareImageView
+                    android:id="@+id/img_rv_item_home_theme_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginTop="0dp"
+            />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardUseCompatPadding="true">
+
+            <com.artoo.sopt23.artoo_client_android.CustomView.SquareImageView
+                    android:id="@+id/img_rv_item_home_theme_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+            />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardUseCompatPadding="true">
+
+            <com.artoo.sopt23.artoo_client_android.CustomView.SquareImageView
+                    android:id="@+id/img_rv_item_home_theme_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardUseCompatPadding="true">
+
+            <com.artoo.sopt23.artoo_client_android.CustomView.SquareImageView
+                    android:id="@+id/img_rv_item_home_theme_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+            />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/txt_rv_item_home_theme_showall"
+            android:text="+ 모두 보기"
+            android:padding="10dp"
+            android:textColor="@color/highlight"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

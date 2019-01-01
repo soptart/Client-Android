@@ -43,11 +43,6 @@ class ProductFragment : Fragment() {
         setFilter()
     }
 
-    override fun onResume() {
-        super.onResume()
-        sv_product_search.isFocusable = false
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == (activity as MainActivity).PRODUCT_FRAGMENT){

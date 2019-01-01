@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:id="@+id/txt_product_zoom_title"
             android:text="바람의 빛" android:textSize="20sp" android:textColor="#ffffff"/>
 </RelativeLayout>

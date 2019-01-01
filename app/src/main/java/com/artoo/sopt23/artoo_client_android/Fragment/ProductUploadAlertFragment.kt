@@ -16,6 +16,7 @@ class ProductUploadAlertFragment : DialogFragment() {
         val view : View = inflater!!.inflate(R.layout.fragment_product_upload_alert, container, false)
 
         view.btn_product_upload_alert_confirm.setOnClickListener {
+            Log.d("product_upload_alert_frag", "confirm_pushed")
             onDestroyView()
         }
 
