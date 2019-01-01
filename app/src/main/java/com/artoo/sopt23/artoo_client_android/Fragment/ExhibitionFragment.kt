@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.artoo.sopt23.artoo_client_android.Adapter.MainExhibitionAdapter
 import com.artoo.sopt23.artoo_client_android.ApplyExhibitionActivity
@@ -19,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_exhibition.*
 class ExhibitionFragment : Fragment() {
 
     lateinit var mainExhibitionAdapter: MainExhibitionAdapter
-    lateinit var btn_apply_ex : TextView
+    lateinit var btn_apply_ex : LinearLayout
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_exhibition, container, false)

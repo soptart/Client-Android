@@ -10,21 +10,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="end"
-        android:layout_weight="6">
+        android:gravity="end|center_vertical"
+        android:layout_weight="7"
+        android:layout_marginTop="39dp">
 
-        <ImageButton
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15.2dp"
-            android:layout_gravity="center"/>
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전시 퇴장"
+                android:textSize="13sp"
+                android:textColor="#353d46"
+                android:layout_gravity="center"
+                android:layout_marginRight="7dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="19dp"
+                android:background="@drawable/exhibition_exit"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1.9">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_ex_detail"
@@ -38,7 +61,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="6"
+        android:layout_weight="7.1"
         android:gravity="center"
         android:orientation="horizontal">
 
